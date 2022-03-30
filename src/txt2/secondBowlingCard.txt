@@ -1,0 +1,5 @@
+Anrich Nortje  30  12.0  3  0.0
+Keshav Maharaj  36  12.0  1  0.0
+Kagiso Rabada  23  12.0  2  0.0
+Dwaine Pretorius  25  12.0  3  0.0
+Tabraiz Shamsi  40  14.0  0  0.0
