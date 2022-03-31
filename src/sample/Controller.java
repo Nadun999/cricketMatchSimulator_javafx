@@ -1,4 +1,5 @@
 package sample;
+import Helpers.Excel_Utility;
 import Helpers.Helper;
 import Innings.First_Innings;
 import Innings.Second_Innings;
@@ -16,6 +17,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 import javafx.scene.control.Label;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 
 import javax.swing.*;
 import java.io.FileNotFoundException;
@@ -81,6 +83,10 @@ public class Controller {
     private Button seeMoreTeam1;
     @FXML
     private Button seeMoreTeam2;
+    @FXML
+    private Button playerStandings;
+//    @FXML
+//    private Button seeMoreTeam2;
 
 
     public Controller() throws IOException {
@@ -145,16 +151,15 @@ public class Controller {
         primaryStage.show();
     }
 
-//    public void thirdLayout() throws IOException {
-//        Stage stage = (Stage) matchSummary.getScene().getWindow();
-//        stage.close();
-//        Stage primaryStage = new Stage();
-//        Parent root = FXMLLoader.load(getClass().getResource("matchSummary.fxml"));
-//        primaryStage.setTitle("Menu");
-//        primaryStage.setScene(new Scene(root, 700, 500));
-//        primaryStage.show();
-//
-//    }
+    public void showPlayerStandings() throws IOException
+    {
+        Stage stage = (Stage) playerStandings.getScene().getWindow();
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("playerStanding.fxml"));
+        primaryStage.setTitle("Group A Matches");
+        primaryStage.setScene(new Scene(root, 900, 650));
+        primaryStage.show();
+    }
 
     public void seeMore1() throws IOException {
         Stage stage = (Stage) seeMoreTeam1.getScene().getWindow();
@@ -176,7 +181,7 @@ public class Controller {
 
 
 
-    public void startMatch() throws IOException {
+    public void startMatch() throws IOException, InvalidFormatException {
 
 
         //        Generating a match between two teams
@@ -276,6 +281,12 @@ public class Controller {
             losing_team = team_to_bowl
             **/
         }
+
+
+//        display player playerStandings
+        Excel_Utility eu = new Excel_Utility();
+        eu.displayPlayerStanding();
+
 
     }
 

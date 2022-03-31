@@ -86,28 +86,17 @@ public class matchDetails {
         while (sc.hasNextLine()) {
             String names = sc.nextLine();
             players_names.add(names);
-
         }
         sc.close();
-
-//        for(int i=players_names.size();i<11;i++)
-//        {
-//            players_names.add("Not Bat");
-//        }
-//        System.out.println(players_names);
-
 
 
         ArrayList<String> players_names1 = new ArrayList<String>();
         File new_obj1 = new File("src/txt2/firstBowlingCard.txt");
         Scanner sc1 = new Scanner(new_obj1);
-        while (sc1.hasNextLine())
-        {
+        while (sc1.hasNextLine()) {
             String names = sc1.nextLine();
             players_names1.add(names);
-
         }
-//        System.out.println(players_names1);
 
         sc.close();
 
@@ -137,31 +126,18 @@ public class matchDetails {
         ArrayList<String> players_names = new ArrayList<String>();
         File new_obj = new File("src/txt2/secondBattingCard.txt");
         Scanner sc = new Scanner(new_obj);
-        while (sc.hasNextLine())
-        {
+        while (sc.hasNextLine()) {
             String names = sc.nextLine();
             players_names.add(names);
-
         }
-
-//        sc.close();
-//        for(int i=players_names.size();i<11;i++)
-//        {
-//            players_names.add("Not Bat");
-//        }
-//        System.out.println(players_names);
 
         ArrayList<String> players_names1 = new ArrayList<String>();
         File new_obj1 = new File("src/txt2/secondBowlingCard.txt");
         Scanner sc1 = new Scanner(new_obj1);
-        while (sc1.hasNextLine())
-        {
+        while (sc1.hasNextLine()) {
             String names = sc1.nextLine();
             players_names1.add(names);
-
         }
-//        System.out.println(players_names1);
-
         sc.close();
 
         batsman12.setText(players_names.get(0));

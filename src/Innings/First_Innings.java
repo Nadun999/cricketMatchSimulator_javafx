@@ -5,6 +5,7 @@ import Helpers.Helper;
 import Models.Batsman;
 import Models.Bowler;
 import Models.Team_Array;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 
 import java.io.*;
 import java.util.*;
@@ -20,8 +21,6 @@ public class First_Innings {
     ArrayList<Batsman> batsmanList = new ArrayList();
     ArrayList<Bowler> bowlerList = new ArrayList();
 
-//    ArrayList battingCard = new ArrayList(4);
-//    ArrayList bowlingCard = new ArrayList(5);
 
     public int Total1;
 
@@ -108,7 +107,7 @@ public class First_Innings {
 
 
 
-    public void playFirstInnings() throws IOException {
+    public void playFirstInnings() throws IOException, InvalidFormatException {
 
         bowlingTeam = eu.getBowlingTeamFromExcel(bowlingInfo.getTeamName(),true);
         battingTeam = eu.getBattingTeamFromExcel(battingInfo.getTeamName(),true);
@@ -403,11 +402,9 @@ public class First_Innings {
 
 
 
-
-
+        eu.playerStandingWriteExcel(batsmanList,bowlerList,true);
+        eu.playerStandingWriteExcel(batsmanList,bowlerList,false);
         Total1 = first_ing_total;
-//        battingCard = batsmanList;
-//        bowlingCard = bowlerList;
 
     }
 

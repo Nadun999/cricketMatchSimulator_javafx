@@ -30,6 +30,10 @@ public class Batsman {
         return runs;
     }
 
+    public Integer getIntegerRuns() {
+        return (Integer) runs;
+    }
+
     public void setRuns(int runs) {
         this.runs = runs;
     }

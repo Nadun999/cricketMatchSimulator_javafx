@@ -39,6 +39,10 @@ public class Bowler {
         return wickets;
     }
 
+    public Integer getIntegerWickets() {
+        return (Integer)wickets;
+    }
+
     public void setWickets(int wickets) {
         this.wickets = wickets;
     }

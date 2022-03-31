@@ -5,6 +5,7 @@ import Helpers.Helper;
 import Models.Batsman;
 import Models.Bowler;
 import Models.Team_Array;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -106,7 +107,7 @@ public class Second_Innings {
 
 
 
-    public void playSecondInnings(int Total) throws IOException {
+    public void playSecondInnings(int Total) throws IOException, InvalidFormatException {
 
         bowlingTeam = eu.getBowlingTeamFromExcel(bowlingInfo.getTeamName(),true);
         battingTeam = eu.getBattingTeamFromExcel(battingInfo.getTeamName(),true);
@@ -392,6 +393,8 @@ public class Second_Innings {
         }
 
 
+        eu.playerStandingWriteExcel(batsmanList,bowlerList,true);
+        eu.playerStandingWriteExcel(batsmanList,bowlerList,false);
         Total2 = second_ing_total;
     }
 
