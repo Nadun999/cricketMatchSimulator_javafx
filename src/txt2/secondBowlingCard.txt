@@ -1,5 +1,5 @@
-Hasan Ali  13  6.0  2  0.0
-Imad Wasim  18  6.0  0  0.0
-Shadab Khan  9  6.0  3  0.0
-Haris Rauf  45  12.0  2  0.0
-Shaheen Afridi  28  11.0  3  0.0
+GOTA  28  12.0  2  0.0
+Jasprit Bumrah  22  12.0  1  0.0
+Mohommad Shami  27  12.0  3  0.0
+Bhuvneshwar Kumar  22  12.0  1  0.0
+Hardik Pandya  18  11.0  3  0.0

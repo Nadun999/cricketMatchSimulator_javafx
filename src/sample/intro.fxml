@@ -19,12 +19,17 @@
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="exitButton" layoutX="64.0" layoutY="319.0" mnemonicParsing="false" onAction="#exit" prefHeight="38.0" prefWidth="143.0" style="-fx-background-color: #d4af37;" text="Exit">
+            <Button fx:id="exitButton" layoutX="64.0" layoutY="371.0" mnemonicParsing="false" onAction="#exit" prefHeight="38.0" prefWidth="143.0" style="-fx-background-color: #d4af37;" text="Exit">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Button>
             <Button fx:id="playerStandings" layoutX="64.0" layoutY="265.0" mnemonicParsing="false" onAction="#showPlayerStandings" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #d4af37;" text="Player Standings">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="teamProfileEdit" layoutX="64.0" layoutY="316.0" mnemonicParsing="false" onAction="#teamProfileEdit" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #d4af37;" text="Team Profile">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font>

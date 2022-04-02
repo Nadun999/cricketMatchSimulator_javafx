@@ -3,7 +3,8 @@ package Models;
 import java.io.File;
 
 public class Team_Array {
-    private String BasePath = "E:/IIT/1st Year/2nd Trimester/CM1601 [PRO] Programming Fundamentals/CW/coursework/team_data/";
+//    private String BasePath = "E:/IIT/1st Year/2nd Trimester/CM1601 [PRO] Programming Fundamentals/CW/coursework/team_data/";
+    private String BasePath = "src/team_data/";
     private String _name;
     private File File_Path;
     private String Team_File_Path;
@@ -12,8 +13,7 @@ public class Team_Array {
         _name = TeamName;
     }
 
-    public Team_Array() {
-    }
+    public Team_Array() {}
 
     public String getTeamName(){
         return _name;

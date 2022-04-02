@@ -14,14 +14,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 import javafx.scene.control.Label;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 
-import javax.swing.*;
-import java.io.FileNotFoundException;
+import java.io.File;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.util.*;
 import java.util.List;
 
@@ -58,6 +57,8 @@ public class Controller {
     @FXML
     public Button exitButton;
     @FXML
+    public Button teamProfileEdit;
+    @FXML
     private Label lb1;
     @FXML
     private Label lb2;
@@ -85,6 +86,24 @@ public class Controller {
     private Button seeMoreTeam2;
     @FXML
     private Button playerStandings;
+    @FXML
+    private Button teamEditMumbai;
+    @FXML
+    private Button teamEditChennai;
+//    @FXML
+//    private Button Chennai_SouthAfrica;
+//    @FXML
+//    private Button Delhi_NewZealand;
+//    @FXML
+//    private Button RoyalChallengers_Bangladesh;
+//    @FXML
+//    private Button Rajastan_Australia;
+//    @FXML
+//    private Button Kolkata_England;
+//    @FXML
+//    private Button Punjab_Pakistan;
+//    @FXML
+//    private Button Sunrisers_SriLanka;
 //    @FXML
 //    private Button seeMoreTeam2;
 
@@ -140,6 +159,53 @@ public class Controller {
         Stage stage = (Stage) exitButton.getScene().getWindow();
         stage.close();
     }
+
+    public void teamProfileEdit() throws IOException {
+        Stage stage =(Stage) teamProfileEdit.getScene().getWindow();
+        stage.close();
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("teamEditMenu.fxml"));
+        primaryStage.setTitle("Colombo Team");
+        primaryStage.setScene(new Scene(root, 700, 500));
+        primaryStage.show();
+    }
+
+    public void teamEditMumbai() throws IOException {
+        Stage stage =(Stage) teamEditMumbai.getScene().getWindow();
+        stage.close();
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("teamEditMumbai.fxml"));
+
+        File myFile1 = new File("src/team_data/CurrentTeam.txt");
+        PrintStream writer = new PrintStream(myFile1);
+
+        writer.print("Mumbai_India");
+        writer.close();
+
+        primaryStage.setTitle("Colombo Team");
+        primaryStage.setScene(new Scene(root, 700, 500));
+        primaryStage.show();
+    }
+
+    public void teamEditChennai() throws IOException {
+        Stage stage =(Stage) teamEditChennai.getScene().getWindow();
+        stage.close();
+        Stage primaryStage = new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("teamEditMumbai.fxml"));
+
+        File myFile1 = new File("src/team_data/CurrentTeam.txt");
+        PrintStream writer = new PrintStream(myFile1);
+
+        writer.print("Chennai_SouthAfrica");
+        writer.close();
+
+        primaryStage.setTitle("Colombo Team");
+        primaryStage.setScene(new Scene(root, 700, 500));
+        primaryStage.show();
+    }
+
+
+
 
     public void secondLayout() throws IOException {
         Stage stage = (Stage) start_button.getScene().getWindow();

@@ -67,9 +67,6 @@ public class Excel_Utility {
         XSSFSheet sh = wb.getSheetAt(0);
         Iterator<Row> row = sh.iterator();
 
-//        System.out.println(sh.getRow(1).getCell(0).toString() );
-//        System.out.println(sh.getRow(0).getLastCellNum());
-//        System.out.println(sh.getLastRowNum());
         int cellCount = sh.getRow(1).getLastCellNum();
         int rowCount = sh.getLastRowNum();
 
@@ -161,19 +158,7 @@ public class Excel_Utility {
         int noOfRows = sh.getLastRowNum();
         System.out.println(noOfRows);
 
-//        row = sh.createRow(10);
-//        cell = row.createCell(10);
-//        cell.setCellValue("QAV");
-//        System.out.println(cell.getStringCellValue());
-//        fos = new FileOutputStream("E:/IIT/1st Year/2nd Trimester/CM1601 [PRO] Programming Fundamentals/CW/coursework/tournament/points_table.xlsx");
-//        wb.write(fos);
-//        fos.flush();
-//        fos.close();
-//        System.out.println("Done");
-
         findRow(sh,"Mumbai_India");
-
-
     }
 
     private static void findRow(XSSFSheet sheet, String cellContent) throws IOException {
@@ -201,7 +186,7 @@ public class Excel_Utility {
 
     public void playerStandingWriteExcel(ArrayList<Batsman> batting,ArrayList<Bowler> bowling ,boolean isBatsman) throws IOException, InvalidFormatException {
 
-        fis = new FileInputStream(("E:/IIT/1st Year/2nd Trimester/CM1601 [PRO] Programming Fundamentals/CW/fx/src/PlayerStanding/player_standings.xlsx"));
+        fis = new FileInputStream(("src/PlayerStanding/player_standings.xlsx"));
         wb = (XSSFWorkbook) WorkbookFactory.create(fis);
         sh = wb.getSheet("Sheet1");
         int noOfRows = sh.getLastRowNum();
@@ -227,7 +212,7 @@ public class Excel_Utility {
                         int currentBatsmanRuns = (int) row.getCell(1).getNumericCellValue();
                         currentBatsmanRuns+= cellContent.getRuns();
                         row.getCell(1).setCellValue(currentBatsmanRuns);
-                        fos = new FileOutputStream("E:/IIT/1st Year/2nd Trimester/CM1601 [PRO] Programming Fundamentals/CW/fx/src/PlayerStanding/player_standings.xlsx");
+                        fos = new FileOutputStream("src/PlayerStanding/player_standings.xlsx");
                         wb.write(fos);
                         fos.flush();
                         fos.close();

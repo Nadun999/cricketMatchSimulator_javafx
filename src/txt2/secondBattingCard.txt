@@ -1,11 +1,11 @@
-David Warner  9  3  Bowled
-Aaron Finch(C)  30  11  Bowled
-Mitchell Marsh  23  7  Bowled
-Steve Smith  0  1  Bowled
-Glenn Maxwell  9  4  Caught
-Matthew Wade  0  1  LBW
-Marcus Stionis  9  4  Caught
-Pat Cummins  24  6  Bowled
-Mitchell Starc  0  1  LBW
-Adam Zampa  3  1  NOT OUT
-Josh Hazlewood  6  2  Bowled
+Martin Guptill  2  2  LBW
+Daryl Mitchell  2  4  Bowled
+Kane Williamson(C)  7  4  Caught
+Devon Conway  59  19  Bowled
+Glenn Phillips  0  1  Caught
+James Neesham  28  10  LBW
+Mitchell Santner  1  3  Caught
+Adam Milne  2  3  Bowled
+Ish Sodhi  7  7  LBW
+Tim Southee  3  2  NOT OUT
+Trent Boult  6  4  Bowled
