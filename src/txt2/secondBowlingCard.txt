@@ -1,5 +1,5 @@
-GOTA  28  12.0  2  0.0
-Jasprit Bumrah  22  12.0  1  0.0
-Mohommad Shami  27  12.0  3  0.0
-Bhuvneshwar Kumar  22  12.0  1  0.0
-Hardik Pandya  18  11.0  3  0.0
+Trent Boult  51  18.0  2  0.0
+Tim Southee  55  18.0  2  0.0
+Ish Sodhi  45  18.0  1  0.0
+Adam Milne  28  18.0  2  0.0
+Mitchell Santner  32  15.0  3  0.0

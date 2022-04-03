@@ -8,6 +8,7 @@ public class Bowler {
     public int wickets;
     public double economy;
 
+
     public Bowler(){
         this.balls = 0;
         this.runs = 0;

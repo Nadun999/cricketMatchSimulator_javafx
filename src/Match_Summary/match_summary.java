@@ -7,7 +7,6 @@ public class match_summary {
     public void matchSummary(InningsSummary firstInningsSummary, InningsSummary secondInningsSummary){
 
         System.out.println("\n------------------------------------------------------------Match Result----------------------------------------------\n");
-//        System.out.println(Total1+" \n"+Total2);
 
         if (secondInningsSummary.getTotalRuns() > firstInningsSummary.getTotalRuns()) {
 
@@ -17,7 +16,7 @@ public class match_summary {
 //            winning_team = team_to_bowl
 //            losing_team = team_to_bat
         }
-//
+
         else if (secondInningsSummary.getTotalRuns() < firstInningsSummary.getTotalRuns()) {
 
             String match_result = secondInningsSummary.getBowlingTeamName().replace('_', ' ') + " Won by " + (firstInningsSummary.getTotalRuns() - secondInningsSummary.getTotalRuns()) + " runs";
@@ -26,7 +25,7 @@ public class match_summary {
 //            winning_team = team_to_bat
 //            losing_team = team_to_bowl
         }
-//
+
 //        elif (Total2 == Total1) {
 //            winning_team = team_to_bat
 //            losing_team = team_to_bowl

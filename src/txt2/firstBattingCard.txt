@@ -1,11 +1,11 @@
-KL Rahul  12  4  Bowled
-Rohit Sharma  41  13  Caught
-Virat Kohli(C)  0  1  LBW
-Suryakumar Yadav  27  10  Caught
-Rishabh Pant  6  3  Caught
-Ravindra Jadeja  27  11  Caught
-Hardik Pandya  0  1  Bowled
-Bhuvneshwar Kumar  11  5  NOT OUT
-Mohommad Shami  11  7  Caught
-Jasprit Bumrah  13  4  LBW
-GOTA  9  3  LBW
+Martin Guptill  36  9  Caught
+Daryl Mitchell  2  2  Bowled
+Kane Williamson(C)  0  1  Caught
+Devon Conway  64  22  Bowled
+Glenn Phillips  26  10  Bowled
+James Neesham  2  2  LBW
+Mitchell Santner  17  7  Caught
+Adam Milne  25  7  LBW
+Ish Sodhi  37  11  Bowled
+Tim Southee  0  1  Caught
+Trent Boult  3  1  NOT OUT

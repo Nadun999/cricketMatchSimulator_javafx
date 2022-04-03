@@ -8,7 +8,6 @@ public class Batsman {
     public String methodOfDissmal;
     public String bowlerName;
     public Integer battingOrder;
-//    public boolean on_strike;
 
 
     public Batsman(){

@@ -5,14 +5,12 @@ import Models.Bowler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
-
-
 import java.util.Collections;
+
 
 public class topPlayers {
 
@@ -39,7 +37,6 @@ public class topPlayers {
     @FXML
     private Button showD;
 
-
     public void performanceDetails() throws IOException {
 
         ArrayList<String> players_names = new ArrayList<String>();
@@ -51,7 +48,6 @@ public class topPlayers {
             players_names.add(names);
         }
         sc.close();
-
 
         ArrayList<String> players_names1 = new ArrayList<String>();
         File new_obj1 = new File("src/PlayerStanding/topBowler.txt");

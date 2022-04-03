@@ -89,7 +89,6 @@ public class matchDetails {
         }
         sc.close();
 
-
         ArrayList<String> players_names1 = new ArrayList<String>();
         File new_obj1 = new File("src/txt2/firstBowlingCard.txt");
         Scanner sc1 = new Scanner(new_obj1);
@@ -97,7 +96,6 @@ public class matchDetails {
             String names = sc1.nextLine();
             players_names1.add(names);
         }
-
         sc.close();
 
         batsman1.setText(players_names.get(0));
@@ -120,7 +118,6 @@ public class matchDetails {
 
     }
 
-
     public void showMatchSummary2() throws IOException {
 
         ArrayList<String> players_names = new ArrayList<String>();
@@ -130,6 +127,7 @@ public class matchDetails {
             String names = sc.nextLine();
             players_names.add(names);
         }
+        sc.close();
 
         ArrayList<String> players_names1 = new ArrayList<String>();
         File new_obj1 = new File("src/txt2/secondBowlingCard.txt");
@@ -157,7 +155,6 @@ public class matchDetails {
         bowler8.setText(players_names1.get(2));
         bowler9.setText(players_names1.get(3));
         bowler10.setText(players_names1.get(4));
-
     }
 
 }

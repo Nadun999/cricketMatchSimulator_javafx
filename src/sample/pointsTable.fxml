@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PointsTable.PointsTable">
+   <center>
+      <AnchorPane prefHeight="419.0" prefWidth="624.0" BorderPane.alignment="CENTER">
+         <children>
+            <Line endX="10.0" endY="375.0" layoutX="440.0" layoutY="281.0" startX="10.0" startY="-281.0" />
+            <Label layoutX="40.0" layoutY="23.0" prefHeight="39.0" prefWidth="353.0" text="                    Group A">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="498.0" layoutY="23.0" prefHeight="39.0" prefWidth="353.0" text="                     Group B">
+               <font>
+                  <Font name="System Bold Italic" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="pTeam1" layoutX="14.0" layoutY="107.0" prefHeight="44.0" prefWidth="432.0" style="-fx-background-color: #add8e6;" />
+            <Label fx:id="pTeam2" layoutX="13.0" layoutY="181.0" prefHeight="44.0" prefWidth="432.0" style="-fx-background-color: #add8e6;" />
+            <Label fx:id="pTeam3" layoutX="14.0" layoutY="259.0" prefHeight="44.0" prefWidth="432.0" style="-fx-background-color: #add8e6;" />
+            <Label fx:id="pTeam4" layoutX="14.0" layoutY="339.0" prefHeight="44.0" prefWidth="432.0" style="-fx-background-color: #add8e6;" />
+            <Label layoutX="459.0" layoutY="107.0" prefHeight="44.0" prefWidth="432.0" style="-fx-background-color: #add8e6;" />
+            <Label layoutX="459.0" layoutY="181.0" prefHeight="44.0" prefWidth="432.0" style="-fx-background-color: #add8e6;" />
+            <Label layoutX="459.0" layoutY="259.0" prefHeight="44.0" prefWidth="432.0" style="-fx-background-color: #add8e6;" />
+            <Label layoutX="459.0" layoutY="339.0" prefHeight="44.0" prefWidth="432.0" style="-fx-background-color: #add8e6;" />
+<!--            <Button fx:id="showD" layoutX="727.0" layoutY="584.0" mnemonicParsing="false" onAction="#updatePointsTable" prefHeight="43.0" prefWidth="124.0" style="-fx-background-color: #d4af37;" text="Show">-->
+<!--               <font>-->
+<!--                  <Font name="System Bold Italic" size="15.0" />-->
+<!--               </font>-->
+<!--            </Button>-->
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

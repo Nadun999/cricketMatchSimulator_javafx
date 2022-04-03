@@ -25,7 +25,6 @@ public class InningsSummary {
         this.bowlingTeamName = bowlingTeamName;
     }
 
-
     public int getTOTAL_WICKETS() {
         return TOTAL_WICKETS;
     }

@@ -23,19 +23,20 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class teamProfileEditMumbai {
+public class teamProfileEdit {
+
+    ArrayList<Batsman> topBatsmen = new ArrayList<>();
+    ArrayList<String> players_names = new ArrayList<String>();
+    String CurrentPlayerName;
 
     private String currentTeamName;
-
     private static XSSFWorkbook wb;
     private static XSSFSheet sh;
     private static FileInputStream fis;
     private static FileOutputStream fos;
     private static Row row;
     private static Cell cell;
-    ArrayList<Batsman> topBatsmen = new ArrayList<>();
-    ArrayList<String> players_names = new ArrayList<String>();
-    String CurrentPlayerName;
+
 
     @FXML
     private Label player1;
@@ -60,18 +61,11 @@ public class teamProfileEditMumbai {
     @FXML
     private Label player11;
     @FXML
-    private Button show;
-    @FXML
-    private Button back2;
-    @FXML
-    private Button edit;
-    @FXML
     private TextField text_no1;
     @FXML
     private TextField text1;
     @FXML
     private Button refresh;
-
 
 
     public void players_name() throws IOException, InvalidFormatException {
@@ -80,8 +74,6 @@ public class teamProfileEditMumbai {
         Scanner sc = new Scanner(new_obj);
         String CurrentTeamName = sc.nextLine();
         sc.close();
-
-
 
         fis = new FileInputStream(("src/team_data/"+CurrentTeamName+"/"+CurrentTeamName+".xlsx"));
         wb = (XSSFWorkbook) WorkbookFactory.create(fis);
@@ -113,7 +105,6 @@ public class teamProfileEditMumbai {
         player9.setText(players_names.get(8));
         player10.setText(players_names.get(9));
         player11.setText(players_names.get(10));
-
     }
 
     public void Edit() throws IOException, InvalidFormatException {
@@ -141,7 +132,7 @@ public class teamProfileEditMumbai {
         player10.setText(players_names.get(9));
         player11.setText(players_names.get(10));
 
-        //updATE EXCEL
+        /** Update team excel files with the edited names **/
         fis = new FileInputStream(("src/team_data/"+CurrentTeamName+"/"+CurrentTeamName+".xlsx"));
         wb = (XSSFWorkbook) WorkbookFactory.create(fis);
         sh = wb.getSheet("Sheet1");
@@ -156,7 +147,7 @@ public class teamProfileEditMumbai {
                         CurrentPlayerName = row.getCell(0).getStringCellValue();
 
                         row.getCell(0).setCellValue(text1.getText());
-                        fos = new FileOutputStream("src/team_data/Mumbai_India/Mumbai_India.xlsx");
+                        fos = new FileOutputStream("src/team_data/"+CurrentTeamName+"/"+CurrentTeamName+".xlsx");
                         wb.write(fos);
                         fos.flush();
                         fos.close();
@@ -165,7 +156,6 @@ public class teamProfileEditMumbai {
                 }
             }
         }
-//        System.out.println(CurrentPlayerName+"   CurrentPlayerName");
         updatePlayerNameInPlayerStanding(CurrentPlayerName,text1.getText());
     }
 
@@ -190,41 +180,5 @@ public class teamProfileEditMumbai {
                 }
             }
         }
-
     }
-
-    public void backToTeams() throws IOException
-    {
-        ArrayList<String> players_names3 = new ArrayList<String>();
-        File new_obj = new File("src/txt/colombo.txt");
-        Scanner sc = new Scanner(new_obj);
-        while (sc.hasNextLine())
-        {
-            String names = sc.nextLine();
-            players_names3.add(names);
-
-        }
-        sc.close();
-        if (players_names3.contains(""))
-        {
-            Stage stage = (Stage) back2.getScene().getWindow();
-            Stage primaryStage = new Stage();
-            Parent root = FXMLLoader.load(getClass().getResource("error_msg.fxml"));
-            primaryStage.setTitle("Colombo Team");
-            primaryStage.setScene(new Scene(root, 600, 400));
-            primaryStage.show();
-        }
-        else
-        {
-            Stage stage = (Stage) back2.getScene().getWindow();
-            Stage primaryStage = new Stage();
-            stage.close();
-            Parent root = FXMLLoader.load(getClass().getResource("GroupA_teams.fxml"));
-            primaryStage.setTitle("Group A Teams");
-            primaryStage.setScene(new Scene(root, 600, 400));
-            primaryStage.show();
-        }
-    }
-
-
 }
