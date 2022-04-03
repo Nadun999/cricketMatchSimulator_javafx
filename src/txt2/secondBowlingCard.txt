@@ -1,5 +1,5 @@
-Trent Boult  51  18.0  2  0.0
-Tim Southee  55  18.0  2  0.0
-Ish Sodhi  45  18.0  1  0.0
-Adam Milne  28  18.0  2  0.0
-Mitchell Santner  32  15.0  3  0.0
+Tabraiz Shamsi  26  12.0  3  0.0
+Anrich Nortje  35  12.0  1  0.0
+Keshav Maharaj  32  12.0  2  0.0
+Kagiso Rabada  21  12.0  2  0.0
+Dwaine Pretorius  37  11.0  1  0.0

@@ -167,7 +167,7 @@ public class Excel_Utility {
 //                    if (cell.getRichStringCellValue().getString().trim().equals(cellContent)) {
 ////                        int currentMatchCount = Integer.parseInt(String.valueOf(row.getCell(1).getRichStringCellValue()));
 //                        int currentMatchCount = (int) row.getCell(1).getNumericCellValue();
-//                        currentMatchCount++;
+//                        currentMatchCount = currentMatchCount + 1;
 //                        row.getCell(1).setCellValue(currentMatchCount);
 //                        fos = new FileOutputStream("src/PointsTable/points_table.xlsx");
 //                        wb.write(fos);
@@ -208,6 +208,7 @@ public class Excel_Utility {
                     if (cell.getRichStringCellValue().getString().trim().equals(cellContent.getName())) {
 //                        int currentMatchCount = Integer.parseInt(String.valueOf(row.getCell(1).getRichStringCellValue()));
                         int currentBatsmanRuns = (int) row.getCell(1).getNumericCellValue();
+                        System.out.println(row.getCell(1)+"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
                         currentBatsmanRuns+= cellContent.getRuns();
                         row.getCell(1).setCellValue(currentBatsmanRuns);
                         fos = new FileOutputStream("src/PlayerStanding/player_standings.xlsx");
@@ -320,7 +321,7 @@ public class Excel_Utility {
         wb = (XSSFWorkbook) WorkbookFactory.create(fis);
         sh = wb.getSheet("Sheet1");
 
-        teamName = "Mumbai_India";
+//        teamName = "Mumbai_India";
 
         for (Row row : sh) {
             for (Cell cell : row) {
@@ -329,23 +330,29 @@ public class Excel_Utility {
 //                        int currentMatchCount = Integer.parseInt(String.valueOf(row.getCell(1).getRichStringCellValue()));
                         int currentMatchCount = (int) row.getCell(1).getNumericCellValue();
                         int currentMatchWins = (int) row.getCell(2).getNumericCellValue();
+                        int currentMatchLooseCount = (int) row.getCell(3).getNumericCellValue();
                         int currentPoints = (int) row.getCell(4).getNumericCellValue();
 
-                        System.out.println(currentMatchCount);
-                        System.out.println(currentMatchWins);
-                        System.out.println(currentPoints);
+                        System.out.println(row.getCell(0)+" "+row.getCell(1)+" "+row.getCell(2)+" "+row.getCell(3)+" "+row.getCell(4));
+//                        System.out.println(currentMatchWins);
+//                        System.out.println(currentPoints);
 
-                        currentMatchCount++;
-                        currentMatchWins++;
-                        currentPoints+=2;
+                        if (isWon){
+                            currentMatchCount=currentMatchCount+1;
+                            currentMatchWins=currentMatchWins+1;
+                            currentPoints= currentPoints+2;
 
-                        row.getCell(1).setCellValue(currentMatchCount);
-                        row.getCell(2).setCellValue(currentMatchWins);
-                        row.getCell(4).setCellValue(currentPoints);
+                            row.getCell(1).setCellValue(currentMatchCount);
+                            row.getCell(2).setCellValue(currentMatchWins);
+                            row.getCell(4).setCellValue(currentPoints);
+                        }
+                        if (!isWon){
+                            currentMatchCount=currentMatchCount+1;
+                            currentMatchLooseCount=currentMatchLooseCount+1;
 
-                        System.out.println(currentMatchCount);
-                        System.out.println(currentMatchWins);
-                        System.out.println(currentPoints);
+                            row.getCell(1).setCellValue(currentMatchCount);
+                            row.getCell(3).setCellValue(currentMatchLooseCount);
+                        }
 
                         fos = new FileOutputStream("src/PointsTable/points_table.xlsx");
                         wb.write(fos);

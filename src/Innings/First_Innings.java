@@ -299,8 +299,9 @@ public class First_Innings {
         eu.playerStandingWriteExcel(batsmanList,bowlerList,true);
         eu.playerStandingWriteExcel(batsmanList,bowlerList,false);
 
-        eu.updatePointsTable("Mumbai_India",true);
-//        eu.updatePointsTable("Mumbai_India",false);
+
+
+//        eu.writeExcel();
 
         Total1 = first_ing_total;
 

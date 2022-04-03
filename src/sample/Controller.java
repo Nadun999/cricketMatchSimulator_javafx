@@ -110,8 +110,8 @@ public class Controller {
         stage.close();
         Stage primaryStage = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("intro.fxml"));
-        primaryStage.setTitle("Menu");
-        primaryStage.setScene(new Scene(root, 700, 500));
+        primaryStage.setTitle("Welcome to the IIT T20 Cricket Tournament!!!");
+        primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }
 
@@ -125,8 +125,8 @@ public class Controller {
         stage.close();
         Stage primaryStage = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("teamEditMenu.fxml"));
-        primaryStage.setTitle("Colombo Team");
-        primaryStage.setScene(new Scene(root, 700, 500));
+        primaryStage.setTitle("Team Profile Edit Menu");
+        primaryStage.setScene(new Scene(root, 650, 490));
         primaryStage.show();
     }
 
@@ -140,8 +140,8 @@ public class Controller {
         writer.print("Mumbai_India");
         writer.close();
 
-        primaryStage.setTitle("Colombo Team");
-        primaryStage.setScene(new Scene(root, 700, 500));
+        primaryStage.setTitle("Mumbai India");
+        primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }
 
@@ -155,8 +155,8 @@ public class Controller {
         writer.print("Chennai_SouthAfrica");
         writer.close();
 
-        primaryStage.setTitle("Colombo Team");
-        primaryStage.setScene(new Scene(root, 700, 500));
+        primaryStage.setTitle("Chennai South Africa");
+        primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }
 
@@ -170,8 +170,8 @@ public class Controller {
         writer.print("Delhi_NewZealand");
         writer.close();
 
-        primaryStage.setTitle("Colombo Team");
-        primaryStage.setScene(new Scene(root, 700, 500));
+        primaryStage.setTitle("Delhi New Zealand");
+        primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }
 
@@ -185,8 +185,8 @@ public class Controller {
         writer.print("Kolkata_England");
         writer.close();
 
-        primaryStage.setTitle("Colombo Team");
-        primaryStage.setScene(new Scene(root, 700, 500));
+        primaryStage.setTitle("Kolkata England");
+        primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }
 
@@ -200,8 +200,8 @@ public class Controller {
         writer.print("Punjab_Pakistan");
         writer.close();
 
-        primaryStage.setTitle("Colombo Team");
-        primaryStage.setScene(new Scene(root, 700, 500));
+        primaryStage.setTitle("Punjab Pakistan");
+        primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }
 
@@ -215,8 +215,8 @@ public class Controller {
         writer.print("Rajastan_Australia");
         writer.close();
 
-        primaryStage.setTitle("Colombo Team");
-        primaryStage.setScene(new Scene(root, 700, 500));
+        primaryStage.setTitle("Rajastan Australia");
+        primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }
 
@@ -230,8 +230,8 @@ public class Controller {
         writer.print("RoyalChallengers_Bangladesh");
         writer.close();
 
-        primaryStage.setTitle("Colombo Team");
-        primaryStage.setScene(new Scene(root, 700, 500));
+        primaryStage.setTitle("Royal Challengers Bangladesh");
+        primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }
 
@@ -245,8 +245,8 @@ public class Controller {
         writer.print("Sunrisers_SriLanka");
         writer.close();
 
-        primaryStage.setTitle("Colombo Team");
-        primaryStage.setScene(new Scene(root, 700, 500));
+        primaryStage.setTitle("Sunrisers Sri lanka");
+        primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }
 
@@ -265,8 +265,8 @@ public class Controller {
         Stage stage = (Stage) playerStandings.getScene().getWindow();
         Stage primaryStage = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("playerStanding.fxml"));
-        primaryStage.setTitle("Group A Matches");
-        primaryStage.setScene(new Scene(root, 900, 650));
+        primaryStage.setTitle("Player Standing");
+        primaryStage.setScene(new Scene(root, 700, 500));
         primaryStage.show();
     }
 
@@ -275,8 +275,8 @@ public class Controller {
         stage.close();
         Stage primaryStage = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("match.fxml"));
-        primaryStage.setTitle("Menu");
-        primaryStage.setScene(new Scene(root, 700, 500));
+        primaryStage.setTitle("Start Match");
+        primaryStage.setScene(new Scene(root, 590, 590));
         primaryStage.show();
     }
 
@@ -284,8 +284,7 @@ public class Controller {
         Stage stage = (Stage) seeMoreTeam1.getScene().getWindow();
         Stage primaryStage = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("matchMoreInfoTeam1.fxml"));
-        primaryStage.setTitle("Menu");
-        primaryStage.setScene(new Scene(root, 1100, 650));
+        primaryStage.setScene(new Scene(root, 710, 630));
         primaryStage.show();
     }
 
@@ -293,8 +292,7 @@ public class Controller {
         Stage stage = (Stage) seeMoreTeam2.getScene().getWindow();
         Stage primaryStage = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("matchMoreInfoTeam2.fxml"));
-        primaryStage.setTitle("Menu");
-        primaryStage.setScene(new Scene(root, 1100, 650));
+        primaryStage.setScene(new Scene(root, 680, 630));
         primaryStage.show();
     }
 
