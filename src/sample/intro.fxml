@@ -14,27 +14,27 @@
                   <Image url="@../img/lpl%20first%20page.jpg" />
                </image>
             </ImageView>
-            <Button fx:id="start_button" layoutX="38.0" layoutY="147.0" mnemonicParsing="false" onAction="#secondLayout" prefHeight="38.0" prefWidth="141.0" style="-fx-background-color: #d4af37;" text="Start">
+            <Button fx:id="start_button" layoutX="38.0" layoutY="107.0" mnemonicParsing="false" onAction="#secondLayout" prefHeight="38.0" prefWidth="141.0" style="-fx-background-color: #0b09a8;" text="Start" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="exitButton" layoutX="447.0" layoutY="354.0" mnemonicParsing="false" onAction="#exit" prefHeight="38.0" prefWidth="143.0" style="-fx-background-color: #d4af37;" text="Exit">
+            <Button fx:id="exitButton" layoutX="37.0" layoutY="315.0" mnemonicParsing="false" onAction="#exit" prefHeight="38.0" prefWidth="143.0" style="-fx-background-color: red;" text="Exit" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="playerStandings" layoutX="38.0" layoutY="199.0" mnemonicParsing="false" onAction="#showPlayerStandings" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #d4af37;" text="Player Standings">
+            <Button fx:id="playerStandings" layoutX="38.0" layoutY="265.0" mnemonicParsing="false" onAction="#showPlayerStandings" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #d4af37;" text="Player Standings">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="teamProfileEdit" layoutX="38.0" layoutY="250.0" mnemonicParsing="false" onAction="#teamProfileEdit" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #d4af37;" text="Team Profile">
+            <Button fx:id="teamProfileEdit" layoutX="38.0" layoutY="159.0" mnemonicParsing="false" onAction="#teamProfileEdit" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: #d4af37;" text="Team Profile">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="pointsTable" layoutX="38.0" layoutY="302.0" mnemonicParsing="false" onAction="#pointsTable" prefHeight="38.0" prefWidth="143.0" style="-fx-background-color: #d4af37;" text="Points Table">
+            <Button fx:id="pointsTable" layoutX="37.0" layoutY="214.0" mnemonicParsing="false" onAction="#pointsTable" prefHeight="38.0" prefWidth="143.0" style="-fx-background-color: #d4af37;" text="Points Table">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font>

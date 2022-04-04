@@ -16,6 +16,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.Scanner;
 
 
 public class Excel_Utility {
@@ -26,6 +27,7 @@ public class Excel_Utility {
     private static FileOutputStream fos;
     private static Row row;
     private static Cell cell;
+    private ArrayList<String> pointsTableArray = new ArrayList<>();
 
     @FXML
     private Label topbatsman1;
@@ -48,6 +50,23 @@ public class Excel_Utility {
     @FXML
     private Label topbowler5;
 
+    @FXML
+    private Label pTeam1;
+    @FXML
+    private Label pTeam2;
+    @FXML
+    private Label pTeam3;
+    @FXML
+    private Label pTeam4;
+    @FXML
+    private Label pTeam5;
+    @FXML
+    private Label pTeam6;
+    @FXML
+    private Label pTeam7;
+    @FXML
+    private Label pTeam8;
+
 
     public Excel_Utility() throws IOException {
     }
@@ -57,10 +76,8 @@ public class Excel_Utility {
         Team_Array temp = new Team_Array(teamName);
         ArrayList<Batsman> battingTeam = new ArrayList<>();
 
-
         File excelFile = new File(String.valueOf(temp.getTeamPath()));
         FileInputStream fis = new FileInputStream(excelFile);
-
 
         XSSFWorkbook wb = new XSSFWorkbook(fis);
         XSSFSheet sh = wb.getSheetAt(0);
@@ -68,7 +85,6 @@ public class Excel_Utility {
 
         int cellCount = sh.getRow(1).getLastCellNum();
         int rowCount = sh.getLastRowNum();
-
 
         for (int i = 1; i < rowCount + 1; i++) {
 
@@ -78,25 +94,10 @@ public class Excel_Utility {
             int n = header.getLastCellNum();
             batsman.name = header.getCell(0).getStringCellValue();
             batsman.battingOrder = i;
-//                batsman.battingOrder = Integer.parseInt(String.valueOf(header.getCell(5)));
-//                System.out.println(batsman.name);
-
             battingTeam.add(batsman);
         }
-
-
-//        for (Batsman i : battingTeam) {
-//            System.out.println(i.name);
-//            System.out.println(i.runs);
-//            System.out.println(i.balls);
-//            System.out.println(i.methodOfDissmal);
-//            System.out.println(i.battingOrder);
-//        }
-
-
         wb.close();
         fis.close();
-
         return battingTeam;
     }
 
@@ -105,21 +106,15 @@ public class Excel_Utility {
         Team_Array temp = new Team_Array(teamName);
         ArrayList<Bowler> bowlingTeam = new ArrayList<>();
 
-
         File excelFile = new File(String.valueOf(temp.getTeamPath()));
         FileInputStream fis = new FileInputStream(excelFile);
-
 
         XSSFWorkbook wb = new XSSFWorkbook(fis);
         XSSFSheet sh = wb.getSheetAt(0);
         Iterator<Row> row = sh.iterator();
 
-//        System.out.println(sh.getRow(1).getCell(0).toString() );
-//        System.out.println(sh.getRow(0).getLastCellNum());
-//        System.out.println(sh.getLastRowNum());
         int cellCount = sh.getRow(1).getLastCellNum();
         int rowCount = sh.getLastRowNum();
-
 
         for (int i = 1; i < rowCount+1; i++) {
 
@@ -128,58 +123,12 @@ public class Excel_Utility {
             Row header = sh.getRow(i);
             int n = header.getLastCellNum();
             bowler.name = header.getCell(0).getStringCellValue();
-
             bowlingTeam.add(bowler);
         }
-
-
-//        for(Bowler i: bowlingTeam) {
-//            System.out.println(i.name);
-//            System.out.println(i.overs);
-//            System.out.println(i.runs);
-//            System.out.println(i.wickets);
-//            System.out.println(i.economy);
-//        }
-
         wb.close();
         fis.close();
-
         return bowlingTeam;
     }
-
-
-
-//    public void writeExcel() throws IOException, InvalidFormatException {
-//
-//        fis = new FileInputStream(("src/PointsTable/points_table.xlsx"));
-//        wb = (XSSFWorkbook) WorkbookFactory.create(fis);
-//        sh = wb.getSheet("Sheet1");
-//        int noOfRows = sh.getLastRowNum();
-//        System.out.println(noOfRows);
-//
-//        findRow(sh,"Mumbai_India");
-//    }
-//
-//    private static void findRow(XSSFSheet sheet, String cellContent) throws IOException {
-//        for (Row row : sheet) {
-//            for (Cell cell : row) {
-//                if (cell.getCellType() == Cell.CELL_TYPE_STRING) {
-//                    if (cell.getRichStringCellValue().getString().trim().equals(cellContent)) {
-////                        int currentMatchCount = Integer.parseInt(String.valueOf(row.getCell(1).getRichStringCellValue()));
-//                        int currentMatchCount = (int) row.getCell(1).getNumericCellValue();
-//                        currentMatchCount = currentMatchCount + 1;
-//                        row.getCell(1).setCellValue(currentMatchCount);
-//                        fos = new FileOutputStream("src/PointsTable/points_table.xlsx");
-//                        wb.write(fos);
-//                        fos.flush();
-//                        fos.close();
-//                        System.out.println("Done");
-//                    }
-//                }
-//            }
-//        }
-//    }
-
 
 
     public void playerStandingWriteExcel(ArrayList<Batsman> batting,ArrayList<Bowler> bowling ,boolean isBatsman) throws IOException, InvalidFormatException {
@@ -321,21 +270,23 @@ public class Excel_Utility {
         wb = (XSSFWorkbook) WorkbookFactory.create(fis);
         sh = wb.getSheet("Sheet1");
 
-//        teamName = "Mumbai_India";
-
         for (Row row : sh) {
+//            if (!isWon){
+//                if (row.getRowNum()==0 || row.getRowNum()==5){
+//                    pointsTableArray.add(row.getCell(0).toString()+"  "+row.getCell(1).toString()+" "+row.getCell(2).toString()+"  "+row.getCell(3).toString()+"  "+row.getCell(3).toString()+"  "+row.getCell(4).toString());
+//                }else {
+//                    pointsTableArray.add(row.getCell(0).toString()+"                 "+(int)(row.getCell(1).getNumericCellValue())+"                 "+(int)(row.getCell(2).getNumericCellValue())+"                 "+(int)(row.getCell(3).getNumericCellValue())+"                 "+(int)(row.getCell(4).getNumericCellValue()));
+//                }
+//            }
             for (Cell cell : row) {
                 if (cell.getCellType() == Cell.CELL_TYPE_STRING) {
                     if (cell.getRichStringCellValue().getString().trim().equals(teamName)) {
-//                        int currentMatchCount = Integer.parseInt(String.valueOf(row.getCell(1).getRichStringCellValue()));
+
+
                         int currentMatchCount = (int) row.getCell(1).getNumericCellValue();
                         int currentMatchWins = (int) row.getCell(2).getNumericCellValue();
                         int currentMatchLooseCount = (int) row.getCell(3).getNumericCellValue();
                         int currentPoints = (int) row.getCell(4).getNumericCellValue();
-
-                        System.out.println(row.getCell(0)+" "+row.getCell(1)+" "+row.getCell(2)+" "+row.getCell(3)+" "+row.getCell(4));
-//                        System.out.println(currentMatchWins);
-//                        System.out.println(currentPoints);
 
                         if (isWon){
                             currentMatchCount=currentMatchCount+1;
@@ -358,11 +309,64 @@ public class Excel_Utility {
                         wb.write(fos);
                         fos.flush();
                         fos.close();
-                        System.out.println("Done");
                     }
                 }
             }
         }
+//        if (!isWon){
+//            File myFile = new File("src/PointsTable/points_table.txt");
+//            PrintStream writer = new PrintStream(myFile);
+//            for(int i=0;i<pointsTableArray.size();i++) {
+//                writer.print(pointsTableArray.get(i)+System.lineSeparator());
+//            }
+//            writer.close();
+//        }
+
+    }
+
+    public void writePointsTable() throws IOException, InvalidFormatException {
+        fis = new FileInputStream(("src/PointsTable/points_table.xlsx"));
+        wb = (XSSFWorkbook) WorkbookFactory.create(fis);
+        sh = wb.getSheet("Sheet1");
+
+        for (Row row : sh) {
+            if (row.getRowNum() == 0 || row.getRowNum() == 5) {
+                pointsTableArray.add(row.getCell(0).toString() + "  " + row.getCell(1).toString() + " " + row.getCell(2).toString() + "  " + row.getCell(3).toString() + "  " + row.getCell(3).toString() + "  " + row.getCell(4).toString());
+            } else {
+                pointsTableArray.add(row.getCell(0).toString() + "                 " + (int) (row.getCell(1).getNumericCellValue()) + "                 " + (int) (row.getCell(2).getNumericCellValue()) + "                 " + (int) (row.getCell(3).getNumericCellValue()) + "                 " + (int) (row.getCell(4).getNumericCellValue()));
+            }
+        }
+
+        File myFile = new File("src/PointsTable/points_table.txt");
+        PrintStream writer = new PrintStream(myFile);
+
+        for(int i=0;i<pointsTableArray.size();i++) {
+            writer.print(pointsTableArray.get(i)+System.lineSeparator());
+        }
+        writer.close();
+    }
+
+    public void displayPointsTable() throws IOException, InvalidFormatException {
+
+
+        ArrayList<String> pointsTable = new ArrayList<String>();
+        File new_obj1 = new File("src/PointsTable/points_table.txt");
+        Scanner sc = new Scanner(new_obj1);
+        while (sc.hasNextLine()) {
+            String names = sc.nextLine();
+            pointsTable.add(names);
+        }
+        sc.close();
+
+        pTeam1.setText(pointsTable.get(1));
+        pTeam2.setText(pointsTable.get(2));
+        pTeam3.setText(pointsTable.get(3));
+        pTeam4.setText(pointsTable.get(4));
+
+        pTeam5.setText(pointsTable.get(6));
+        pTeam6.setText(pointsTable.get(7));
+        pTeam7.setText(pointsTable.get(8));
+        pTeam8.setText(pointsTable.get(9));
     }
 
 }

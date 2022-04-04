@@ -252,11 +252,10 @@ public class Controller {
 
     public void pointsTable() throws IOException {
         Stage stage =(Stage) pointsTable.getScene().getWindow();
-        stage.close();
         Stage primaryStage = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("pointsTable.fxml"));
         primaryStage.setTitle("Colombo Team");
-        primaryStage.setScene(new Scene(root, 700, 500));
+        primaryStage.setScene(new Scene(root, 900, 550));
         primaryStage.show();
     }
 
@@ -396,6 +395,8 @@ public class Controller {
         /** display player playerStandings **/
         Excel_Utility eu = new Excel_Utility();
         eu.displayPlayerStanding();
+
+
 
 
 

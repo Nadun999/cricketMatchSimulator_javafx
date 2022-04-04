@@ -56,7 +56,7 @@ public class topPlayers {
             String names = sc1.nextLine();
             players_names1.add(names);
         }
-        sc.close();
+        sc1.close();
 
         topbatsman1.setText(players_names.get(0));
         topbatsman2.setText(players_names.get(1));

@@ -44,6 +44,7 @@ public class match_summary {
         Excel_Utility eu = new Excel_Utility();
         eu.updatePointsTable(winning_team,true);
         eu.updatePointsTable(losing_team,false);
+        eu.writePointsTable();
     }
 
 

@@ -1,5 +1,5 @@
-Mohommad Shami  22  12.0  0  0.0
-Bhuvneshwar Kumar  34  12.0  1  0.0
-Hardik Pandya  21  12.0  2  0.0
-Kuldeep Yadav  46  18.0  2  0.0
-Jasprit Bumrah  24  13.0  5  0.0
+Mitchell Starc  43  18.0  0  0.0
+Pat Cummins  37  18.0  3  0.0
+Marcus Stionis  46  18.0  1  0.0
+Josh Hazlewood  71  24.0  3  0.0
+Adam Zampa  52  21.0  3  0.0

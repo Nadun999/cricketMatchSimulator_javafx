@@ -24,67 +24,67 @@
                         <Font name="System Bold Italic" size="20.0" />
                     </font>
                 </Label>
-                <Label fx:id="batsman22" layoutX="3.0" layoutY="586.0" prefHeight="44.0" prefWidth="326.0" style="-fx-background-color: #d4af37;" text="PLAYER 11">
+                <Label fx:id="batsman22" layoutX="3.0" layoutY="586.0" prefHeight="44.0" prefWidth="326.0" style="-fx-background-color: #0b09a8;" text="PLAYER 11" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Label>
-                <Label fx:id="batsman21" layoutX="3.0" layoutY="535.0" prefHeight="44.0" prefWidth="325.0" style="-fx-background-color: #d4af37;" text="PLAYER 10">
+                <Label fx:id="batsman21" layoutX="3.0" layoutY="535.0" prefHeight="44.0" prefWidth="325.0" style="-fx-background-color: #0b09a8;" text="PLAYER 10" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Label>
-                <Label fx:id="batsman20" layoutX="3.0" layoutY="484.0" prefHeight="44.0" prefWidth="324.0" style="-fx-background-color: #d4af37;" text="PLAYER 9">
+                <Label fx:id="batsman20" layoutX="3.0" layoutY="484.0" prefHeight="44.0" prefWidth="324.0" style="-fx-background-color: #0b09a8;" text="PLAYER 9" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Label>
-                <Label fx:id="batsman19" layoutX="3.0" layoutY="429.0" prefHeight="44.0" prefWidth="325.0" style="-fx-background-color: #d4af37;" text="PLAYER 8">
+                <Label fx:id="batsman19" layoutX="3.0" layoutY="429.0" prefHeight="44.0" prefWidth="325.0" style="-fx-background-color: #0b09a8;" text="PLAYER 8" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Label>
-                <Label fx:id="batsman18" layoutX="3.0" layoutY="378.0" prefHeight="44.0" prefWidth="324.0" style="-fx-background-color: #d4af37;" text="PLAYER 7">
+                <Label fx:id="batsman18" layoutX="3.0" layoutY="378.0" prefHeight="44.0" prefWidth="324.0" style="-fx-background-color: #0b09a8;" text="PLAYER 7" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Label>
-                <Label fx:id="batsman17" layoutX="3.0" layoutY="326.0" prefHeight="44.0" prefWidth="324.0" style="-fx-background-color: #d4af37;" text="PLAYER 6">
+                <Label fx:id="batsman17" layoutX="3.0" layoutY="326.0" prefHeight="44.0" prefWidth="324.0" style="-fx-background-color: #0b09a8;" text="PLAYER 6" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Label>
-                <Label fx:id="batsman16" layoutX="3.0" layoutY="275.0" prefHeight="44.0" prefWidth="322.0" style="-fx-background-color: #d4af37;" text="PLAYER 5">
+                <Label fx:id="batsman16" layoutX="3.0" layoutY="275.0" prefHeight="44.0" prefWidth="322.0" style="-fx-background-color: #0b09a8;" text="PLAYER 5" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Label>
-                <Label fx:id="batsman15" layoutX="3.0" layoutY="222.0" prefHeight="44.0" prefWidth="322.0" style="-fx-background-color: #d4af37;" text="PLAYER 4">
+                <Label fx:id="batsman15" layoutX="3.0" layoutY="222.0" prefHeight="44.0" prefWidth="322.0" style="-fx-background-color: #0b09a8;" text="PLAYER 4" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Label>
-                <Label fx:id="batsman14" layoutX="3.0" layoutY="168.0" prefHeight="44.0" prefWidth="321.0" style="-fx-background-color: #d4af37;" text="PLAYER 3">
+                <Label fx:id="batsman14" layoutX="3.0" layoutY="168.0" prefHeight="44.0" prefWidth="321.0" style="-fx-background-color: #0b09a8;" text="PLAYER 3" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Label>
-                <Label fx:id="batsman13" layoutX="3.0" layoutY="116.0" prefHeight="44.0" prefWidth="320.0" style="-fx-background-color: #d4af37;" text="PLAYER 2">
+                <Label fx:id="batsman13" layoutX="3.0" layoutY="116.0" prefHeight="44.0" prefWidth="320.0" style="-fx-background-color: #0b09a8;" text="PLAYER 2" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Label>
-                <Label fx:id="batsman12" layoutX="3.0" layoutY="63.0" prefHeight="44.0" prefWidth="319.0" style="-fx-background-color: #d4af37;" text="PLAYER 1">
+                <Label fx:id="batsman12" layoutX="3.0" layoutY="63.0" prefHeight="44.0" prefWidth="319.0" style="-fx-background-color: #0b09a8;" text="PLAYER 1" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Label>
-                <Label fx:id="bowler6" layoutX="365.0" layoutY="63.0" prefHeight="44.0" prefWidth="317.0" style="-fx-background-color: #d4af37;" text="BOWLER 1">
+                <Label fx:id="bowler6" layoutX="365.0" layoutY="63.0" prefHeight="44.0" prefWidth="317.0" style="-fx-background-color: #0b09a8;" text="BOWLER 1" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Label>
-                <Label fx:id="bowler9" layoutX="365.0" layoutY="222.0" prefHeight="44.0" prefWidth="320.0" style="-fx-background-color: #d4af37;" text="BOWLER 4">
+                <Label fx:id="bowler9" layoutX="365.0" layoutY="222.0" prefHeight="44.0" prefWidth="320.0" style="-fx-background-color: #0b09a8;" text="BOWLER 4" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Label>
-                <Label fx:id="bowler8" layoutX="365.0" layoutY="168.0" prefHeight="44.0" prefWidth="319.0" style="-fx-background-color: #d4af37;" text="BOWLER 3">
+                <Label fx:id="bowler8" layoutX="365.0" layoutY="168.0" prefHeight="44.0" prefWidth="319.0" style="-fx-background-color: #0b09a8;" text="BOWLER 3" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Label>
-                <Label fx:id="bowler7" layoutX="365.0" layoutY="116.0" prefHeight="44.0" prefWidth="319.0" style="-fx-background-color: #d4af37;" text="BOWLER 2">
+                <Label fx:id="bowler7" layoutX="365.0" layoutY="116.0" prefHeight="44.0" prefWidth="319.0" style="-fx-background-color: #0b09a8;" text="BOWLER 2" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Label>
-                <Label fx:id="bowler10" layoutX="365.0" layoutY="275.0" prefHeight="44.0" prefWidth="321.0" style="-fx-background-color: #d4af37;" text="BOWLER 5">
+                <Label fx:id="bowler10" layoutX="365.0" layoutY="275.0" prefHeight="44.0" prefWidth="321.0" style="-fx-background-color: #0b09a8;" text="BOWLER 5" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Label>
