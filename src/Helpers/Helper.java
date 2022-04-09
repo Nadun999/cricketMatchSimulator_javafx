@@ -55,7 +55,7 @@ public class Helper {
         if(selection.get(0).equals(coin.get(0))){
             toss_outcome[0] = visiting_team.getTeamName();
             toss_outcome[1] = options.get(0);
-            System.out.println(toss_outcome[0]+"-- visiting team won the toss and choose to "+options.get(0));
+
             if (toss_outcome[1].equals("bat")){
                 team_to_bat = visiting_team;
                 team_to_bowl = home_team;
@@ -69,7 +69,6 @@ public class Helper {
         else {
             toss_outcome[0] = home_team.getTeamName();
             toss_outcome[1] = options.get(1);
-            System.out.println(toss_outcome[0]+"-- home team won the toss and choose to "+options.get(1));
             if (toss_outcome[1].equals("bat")){
                 team_to_bat = home_team;
                 team_to_bowl = visiting_team;

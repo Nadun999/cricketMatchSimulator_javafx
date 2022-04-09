@@ -1,11 +1,11 @@
-Dinesh Chandimal  117  42  Bowled
-Pathum Nissanka  72  25  LBW
-Charith Asalanka  9  5  Caught
-Dhananjaya de Silva  19  10  Bowled
-Bhanuka Rajapakse  1  2  Bowled
-Dasun Shanka(C)  0  1  LBW
-Wanindu Hasaranga  17  7  LBW
-Chamika Karunarathne  1  2  Bowled
-Dushmantha Chameera  3  1  NOT OUT
-Maheesh Theekshana  5  2  LBW
-MADAM GOTA  5  2  LBW
+Dinesh Chandimal      10  3  LBW    Josh Hazlewood
+Pathum Nissanka      18  7  Caught    Mitchell Starc
+Charith Asalanka      27  17  LBW    Mitchell Starc
+Dhananjaya de Silva      21  10  Bowled    Josh Hazlewood
+Bhanuka Rajapakse      5  3  Bowled    Adam Zampa
+Dasun Shanka(C)      55  19  Caught    Mitchell Starc
+Wanindu Hasaranga      3  4  Caught    Pat Cummins
+Chamika Karunarathne      8  4  Bowled    Josh Hazlewood
+Dushmantha Chameera      11  4  Caught    Josh Hazlewood
+Maheesh Theekshana      9  5  Caught    Adam Zampa
+MADAM GOTA      1  1  NOT OUT    

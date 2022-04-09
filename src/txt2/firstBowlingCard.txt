@@ -1,5 +1,5 @@
-Mitchell Starc  43  18.0  0  0.0
-Pat Cummins  37  18.0  3  0.0
-Marcus Stionis  46  18.0  1  0.0
-Josh Hazlewood  71  24.0  3  0.0
-Adam Zampa  52  21.0  3  0.0
+Pat Cummins      24  12.0  1
+Marcus Stionis      24  12.0  0
+Josh Hazlewood      40  18.0  4
+Adam Zampa      38  18.0  2
+Mitchell Starc      42  17.0  3

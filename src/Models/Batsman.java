@@ -1,9 +1,9 @@
 package Models;
 
-public class Batsman {
+public class Batsman extends Player {
 
-    public String name;
-    public int runs;
+//    public String name;
+//    public int runs;
     public int balls;
     public String methodOfDissmal;
     public String bowlerName;
@@ -11,32 +11,33 @@ public class Batsman {
 
 
     public Batsman(){
-        this.runs = 0;
+        super();
+//        this.runs = 0;
         this.balls = 0;
         this.methodOfDissmal = "";
         this.bowlerName = "";
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getRuns() {
-        return runs;
-    }
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public int getRuns() {
+//        return runs;
+//    }
 
     public Integer getIntegerRuns() {
         return (Integer) runs;
     }
 
-    public void setRuns(int runs) {
-        this.runs = runs;
-    }
-
+//    public void setRuns(int runs) {
+//        this.runs = runs;
+//    }
+//
     public int getBalls() {
         return balls;
     }

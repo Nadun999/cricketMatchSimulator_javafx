@@ -247,39 +247,13 @@ public class Second_Innings {
         /** sort score_card_second_ing to the original batting order **/
         Collections.sort(batsmanList,(o1, o2) -> o1.getBattingOrder().compareTo(o2.getBattingOrder()));
 
-        /*********************************************************************************
-         //additing the economy for bowler
-         for bowler_economy_first_ing in bowler_list_first_ing:
-         bowler_economy_first_ing[4] = round(
-         bowler_economy_first_ing[2]/float(bowler_economy_first_ing[1]), 2)
-         ********************************************************************************/
-
-        /**
-        System.out.println("\n\n-------------------------------------------------2nd Innings Summary-------------------------------------------");
-        System.out.println("\n");
-        System.out.println("\nTotal-"+ second_ing_total);
-        System.out.println("\nWickets-"+ second_ing_wickets);
-        System.out.println("\nBalls-"+ (second_ing_balls-1));
-
-        System.out.println("-------------------");
-        for(Batsman i: batsmanList){
-            System.out.println(i.getName()+" "+i.getRuns()+" "+i.getBalls()+" "+i.getMethodOfDissmal());
-        }
-
-        System.out.println("-------------------");
-        for(Bowler i: bowlerList){
-            System.out.println(i.getName()+" "+i.getRuns()+" "+i.getBalls()+" "+i.getWickets()+" "+i.getEconomy());
-        }
-        **/
-
-
         /** writing the batsman list into a txt file **/
         try {
             File myFile1 = new File("src/txt2/secondBattingCard.txt");
             PrintStream writer = new PrintStream(myFile1);
 
             for(Batsman i: batsmanList) {
-                writer.print(i.getName()+"  "+i.getRuns()+"  "+i.getBalls()+"  "+i.getMethodOfDissmal()+ System.lineSeparator());
+                writer.print(i.getName()+"      "+i.getRuns()+"  "+i.getBalls()+"  "+i.getMethodOfDissmal()+"    "+i.getBowlerName()+ System.lineSeparator());
             }
             writer.close();
 
@@ -293,7 +267,7 @@ public class Second_Innings {
             PrintStream writer = new PrintStream(myFile2);
 
             for(Bowler i: bowlerList) {
-                writer.print(i.getName()+"  "+i.getRuns()+"  "+i.getBalls()+"  "+i.getWickets()+"  "+i.getEconomy()+ System.lineSeparator());
+                writer.print(i.getName()+"      "+i.getRuns()+"  "+i.getBalls()+"  "+i.getWickets()+ System.lineSeparator());
             }
             writer.close();
 
@@ -304,8 +278,8 @@ public class Second_Innings {
         /** calling playerstanding to write the excel file **/
         eu.playerStandingWriteExcel(batsmanList,bowlerList,true);
         eu.playerStandingWriteExcel(batsmanList,bowlerList,false);
+
         Total2 = second_ing_total;
     }
-
 }
 

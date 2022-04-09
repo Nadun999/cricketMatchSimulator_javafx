@@ -254,7 +254,7 @@ public class Controller {
         Stage stage =(Stage) pointsTable.getScene().getWindow();
         Stage primaryStage = new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("pointsTable.fxml"));
-        primaryStage.setTitle("Colombo Team");
+        primaryStage.setTitle("Points Table");
         primaryStage.setScene(new Scene(root, 900, 550));
         primaryStage.show();
     }
@@ -333,7 +333,6 @@ public class Controller {
 
 
 
-
         /** start first innings **/
         First_Innings firstInnings = new First_Innings(tossOutcome);
         firstInnings.playFirstInnings();
@@ -376,32 +375,15 @@ public class Controller {
         if (secondInningsSummary.getTotalRuns() > firstInningsSummary.getTotalRuns()) {
             String match_result = secondInningsSummary.getBattingTeamName().replace('_', ' ') + " Won by " + (firstInningsSummary.getTOTAL_WICKETS() - secondInningsSummary.getWickets()) + " wickets";
             lb3.setText(match_result);
-
-            /**
-            winning_team = team_to_bowl
-            losing_team = team_to_bat
-            **/
         } else if (secondInningsSummary.getTotalRuns() < firstInningsSummary.getTotalRuns()) {
             String match_result = secondInningsSummary.getBowlingTeamName().replace('_', ' ') + " Won by " + (firstInningsSummary.getTotalRuns() - secondInningsSummary.getTotalRuns()) + " runs";
             lb3.setText(match_result);
-
-            /**
-            winning_team = team_to_bat
-            losing_team = team_to_bowl
-            **/
         }
 
 
-        /** display player playerStandings **/
+        /** display player in playerStandings **/
         Excel_Utility eu = new Excel_Utility();
         eu.displayPlayerStanding();
 
-
-
-
-
-
     }
-
-
 }

@@ -155,17 +155,13 @@ public class Excel_Utility {
             for (Cell cell : row) {
                 if (cell.getCellType() == Cell.CELL_TYPE_STRING) {
                     if (cell.getRichStringCellValue().getString().trim().equals(cellContent.getName())) {
-//                        int currentMatchCount = Integer.parseInt(String.valueOf(row.getCell(1).getRichStringCellValue()));
                         int currentBatsmanRuns = (int) row.getCell(1).getNumericCellValue();
-                        System.out.println(row.getCell(1)+"^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
                         currentBatsmanRuns+= cellContent.getRuns();
                         row.getCell(1).setCellValue(currentBatsmanRuns);
                         fos = new FileOutputStream("src/PlayerStanding/player_standings.xlsx");
                         wb.write(fos);
                         fos.flush();
                         fos.close();
-                        System.out.println("Done");
-                        //                        System.out.println(cell.getRichStringCellValue().getString()+"--------------------");
                     }
                 }
             }
@@ -177,16 +173,13 @@ public class Excel_Utility {
             for (Cell cell : row) {
                 if (cell.getCellType() == Cell.CELL_TYPE_STRING) {
                     if (cell.getRichStringCellValue().getString().trim().equals(cellContent.getName())) {
-//                        int currentMatchCount = Integer.parseInt(String.valueOf(row.getCell(1).getRichStringCellValue()));
                         int currentBowlerWickets = (int) row.getCell(2).getNumericCellValue();
                         currentBowlerWickets+= cellContent.getWickets();
                         row.getCell(2).setCellValue(currentBowlerWickets);
-                        fos = new FileOutputStream("E:/IIT/1st Year/2nd Trimester/CM1601 [PRO] Programming Fundamentals/CW/fx/src/PlayerStanding/player_standings.xlsx");
+                        fos = new FileOutputStream("src/PlayerStanding/player_standings.xlsx");
                         wb.write(fos);
                         fos.flush();
                         fos.close();
-                        System.out.println("Done");
-                        //                        System.out.println(cell.getRichStringCellValue().getString()+"--------------------");
                     }
                 }
             }
@@ -195,13 +188,12 @@ public class Excel_Utility {
 
     public void displayPlayerStanding() throws IOException, InvalidFormatException {
 
-        fis = new FileInputStream(("E:/IIT/1st Year/2nd Trimester/CM1601 [PRO] Programming Fundamentals/CW/fx/src/PlayerStanding/player_standings.xlsx"));
+        fis = new FileInputStream(("src/PlayerStanding/player_standings.xlsx"));
         wb = (XSSFWorkbook) WorkbookFactory.create(fis);
         sh = wb.getSheet("Sheet1");
         int noOfRows = sh.getLastRowNum();
         ArrayList<Batsman> topBatsmen = new ArrayList<>();
         ArrayList<Bowler> topBowler = new ArrayList<>();
-
 
         for (Row row : sh) {
             if(row.getRowNum() != 0){
@@ -222,45 +214,37 @@ public class Excel_Utility {
             }
         }
 
-
         //sort batsman runs to descending order
         Collections.sort(topBatsmen,(o1, o2) -> o2.getIntegerRuns().compareTo(o1.getIntegerRuns()));
 
         //sort bowler wickets to descending order
         Collections.sort(topBowler,(o1, o2) -> o2.getIntegerWickets().compareTo(o1.getIntegerWickets()));
 
-
         //writing batsman player standings into text file to display
-        File myFile = new File("src/PlayerStanding/topBatsman.txt");
-        PrintStream writer = new PrintStream(myFile);
+        try{
+            File myFile = new File("src/PlayerStanding/topBatsman.txt");
+            PrintStream writer = new PrintStream(myFile);
 
-        for(int i = 0; i < 5; i++) {
-            writer.print(topBatsmen.get(i).getName()+" "+topBatsmen.get(i).getRuns()+ System.lineSeparator());
+            for(int i = 0; i < 5; i++) {
+                writer.print(topBatsmen.get(i).getName()+" "+topBatsmen.get(i).getRuns()+ System.lineSeparator());
+            }
+            writer.close();
+        } catch(FileNotFoundException fnf) {
+            System.out.println(fnf+"file not found");
         }
-        writer.close();
-
 
         //writing bowler player standings into text file to display
-        File myFile1 = new File("src/PlayerStanding/topBowler.txt");
-        PrintStream writer1 = new PrintStream(myFile1);
+        try{
+            File myFile1 = new File("src/PlayerStanding/topBowler.txt");
+            PrintStream writer1 = new PrintStream(myFile1);
 
-        for(int i = 0; i < 5; i++) {
-            writer1.print(topBowler.get(i).getName()+" "+topBowler.get(i).getWickets()+ System.lineSeparator());
+            for(int i = 0; i < 5; i++) {
+                writer1.print(topBowler.get(i).getName()+" "+topBowler.get(i).getWickets()+ System.lineSeparator());
+            }
+            writer1.close();
+        } catch(FileNotFoundException fnf) {
+            System.out.println(fnf+"file not found");
         }
-        writer1.close();
-
-
-
-        for (int i = 0; i < 5; i++) {
-            System.out.println(topBatsmen.get(i).getName()+" "+topBatsmen.get(i).getRuns());
-        }
-
-
-        for (int i = 0; i < 5; i++) {
-            System.out.println(topBowler.get(i).getName()+" "+topBowler.get(i).getWickets());
-        }
-
-
     }
 
 
@@ -271,17 +255,9 @@ public class Excel_Utility {
         sh = wb.getSheet("Sheet1");
 
         for (Row row : sh) {
-//            if (!isWon){
-//                if (row.getRowNum()==0 || row.getRowNum()==5){
-//                    pointsTableArray.add(row.getCell(0).toString()+"  "+row.getCell(1).toString()+" "+row.getCell(2).toString()+"  "+row.getCell(3).toString()+"  "+row.getCell(3).toString()+"  "+row.getCell(4).toString());
-//                }else {
-//                    pointsTableArray.add(row.getCell(0).toString()+"                 "+(int)(row.getCell(1).getNumericCellValue())+"                 "+(int)(row.getCell(2).getNumericCellValue())+"                 "+(int)(row.getCell(3).getNumericCellValue())+"                 "+(int)(row.getCell(4).getNumericCellValue()));
-//                }
-//            }
             for (Cell cell : row) {
                 if (cell.getCellType() == Cell.CELL_TYPE_STRING) {
                     if (cell.getRichStringCellValue().getString().trim().equals(teamName)) {
-
 
                         int currentMatchCount = (int) row.getCell(1).getNumericCellValue();
                         int currentMatchWins = (int) row.getCell(2).getNumericCellValue();
@@ -313,15 +289,6 @@ public class Excel_Utility {
                 }
             }
         }
-//        if (!isWon){
-//            File myFile = new File("src/PointsTable/points_table.txt");
-//            PrintStream writer = new PrintStream(myFile);
-//            for(int i=0;i<pointsTableArray.size();i++) {
-//                writer.print(pointsTableArray.get(i)+System.lineSeparator());
-//            }
-//            writer.close();
-//        }
-
     }
 
     public void writePointsTable() throws IOException, InvalidFormatException {
@@ -337,13 +304,19 @@ public class Excel_Utility {
             }
         }
 
-        File myFile = new File("src/PointsTable/points_table.txt");
-        PrintStream writer = new PrintStream(myFile);
+        try{
+            File myFile = new File("src/PointsTable/points_table.txt");
+            PrintStream writer = new PrintStream(myFile);
 
-        for(int i=0;i<pointsTableArray.size();i++) {
-            writer.print(pointsTableArray.get(i)+System.lineSeparator());
+            for(int i=0;i<pointsTableArray.size();i++) {
+                writer.print(pointsTableArray.get(i)+System.lineSeparator());
+            }
+            writer.close();
+        } catch(FileNotFoundException fnf) {
+            System.out.println(fnf+"file not found");
         }
-        writer.close();
+
+
     }
 
     public void displayPointsTable() throws IOException, InvalidFormatException {

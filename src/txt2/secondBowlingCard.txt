@@ -1,5 +1,5 @@
-Wanindu Hasaranga  37  12.0  1  0.0
-MADAM GOTA  50  18.0  1  0.0
-Maheesh Theekshana  65  18.0  1  0.0
-Dushmantha Chameera  57  18.0  2  0.0
-Chamika Karunarathne  44  17.0  1  0.0
+Dushmantha Chameera      26  12.0  1
+Chamika Karunarathne      29  12.0  1
+Wanindu Hasaranga      37  12.0  2
+MADAM GOTA      34  18.0  1
+Maheesh Theekshana      45  18.0  1

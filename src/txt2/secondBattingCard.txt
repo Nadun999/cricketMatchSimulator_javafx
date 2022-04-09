@@ -1,11 +1,11 @@
-David Warner  56  19  NOT OUT
-Aaron Finch(C)  26  9  LBW
-Mitchell Marsh  35  9  LBW
-Steve Smith  23  7  Caught
-Glenn Maxwell  75  27  Caught
-Matthew Wade  17  6  Bowled
-Marcus Stionis  0  1  LBW
-Pat Cummins  21  5  * NOT OUT
-Mitchell Starc  0  0  
-Adam Zampa  0  0  
-Josh Hazlewood  0  0  
+David Warner      55  23  LBW    Dushmantha Chameera
+Aaron Finch(C)      30  12  LBW    Chamika Karunarathne
+Mitchell Marsh      7  4  LBW    Wanindu Hasaranga
+Steve Smith      18  9  Caught    Wanindu Hasaranga
+Glenn Maxwell      14  9  LBW    MADAM GOTA
+Matthew Wade      36  9  * NOT OUT    
+Marcus Stionis      8  5  Caught    Maheesh Theekshana
+Pat Cummins      3  1  NOT OUT    
+Mitchell Starc      0  0      
+Adam Zampa      0  0      
+Josh Hazlewood      0  0      

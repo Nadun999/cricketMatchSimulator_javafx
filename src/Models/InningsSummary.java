@@ -2,11 +2,11 @@ package Models;
 
 public class InningsSummary {
 
-    String battingTeamName;
-    String bowlingTeamName;
-    static int TOTAL_WICKETS = 10;
-    int totalRuns;
-    int wickets;
+    private String battingTeamName;
+    private String bowlingTeamName;
+    private static int TOTAL_WICKETS = 10;
+    private int totalRuns;
+    private int wickets;
 
 
     public String getBattingTeamName() {
