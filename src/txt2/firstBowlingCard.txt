@@ -1,5 +1,5 @@
-Pat Cummins      24  12.0  1
-Marcus Stionis      24  12.0  0
-Josh Hazlewood      40  18.0  4
-Adam Zampa      38  18.0  2
-Mitchell Starc      42  17.0  3
+Hasan Ali      24  12.0  2
+Imad Wasim      26  12.0  2
+Shadab Khan      34  12.0  2
+Haris Rauf      48  18.0  2
+Shaheen Afridi      56  16.0  2

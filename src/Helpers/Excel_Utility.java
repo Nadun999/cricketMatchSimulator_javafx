@@ -92,8 +92,8 @@ public class Excel_Utility {
 
             Row header = sh.getRow(i);
             int n = header.getLastCellNum();
-            batsman.name = header.getCell(0).getStringCellValue();
-            batsman.battingOrder = i;
+            batsman.setName(header.getCell(0).getStringCellValue());
+            batsman.setBattingOrder(i);
             battingTeam.add(batsman);
         }
         wb.close();
@@ -122,7 +122,7 @@ public class Excel_Utility {
 
             Row header = sh.getRow(i);
             int n = header.getLastCellNum();
-            bowler.name = header.getCell(0).getStringCellValue();
+            bowler.setName(header.getCell(0).getStringCellValue()) ;
             bowlingTeam.add(bowler);
         }
         wb.close();
@@ -341,6 +341,4 @@ public class Excel_Utility {
         pTeam7.setText(pointsTable.get(8));
         pTeam8.setText(pointsTable.get(9));
     }
-
 }
-

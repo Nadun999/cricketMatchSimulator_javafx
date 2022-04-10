@@ -150,16 +150,16 @@ public class First_Innings {
                     first_ing_wickets++;
 
                     /** adding wickets to bowler **/
-                    bowler_onstrike.wickets++;
+                    bowler_onstrike.setWickets(bowler_onstrike.getWickets()+1);
 
                     /** adding first_ing_balls to batsman **/
-                    batsman_onstrike.balls++;
+                    batsman_onstrike.setBalls(batsman_onstrike.getBalls()+1);
 
                     /** adding dismissed bowler name to batsman **/
-                    batsman_onstrike.bowlerName = bowler_onstrike.getName();
+                    batsman_onstrike.setBowlerName(bowler_onstrike.getName());
 
                     /** adding method of dismissal to batsman **/
-                    batsman_onstrike.methodOfDissmal = cricketHelper.methodOfDismissal();
+                    batsman_onstrike.setMethodOfDissmal(cricketHelper.methodOfDismissal());
 
                     /** moving the dismissed_batsmen to dismissed_batsmen array **/
                     if (!dismissedBatsman.contains(batsman_onstrike)) {
@@ -190,13 +190,13 @@ public class First_Innings {
                     first_ing_total += batterScore;
 
                     /** adding batter_score to current_batsman **/
-                    batsman_onstrike.runs += batterScore;
+                    batsman_onstrike.setRuns(batsman_onstrike.getRuns()+batterScore);
 
                     /** adding first_ing_balls to current_batsman **/
-                    batsman_onstrike.balls++;
+                    batsman_onstrike.setBalls(batsman_onstrike.getBalls()+1);
 
                     /** adding batter_score to current_bowler **/
-                    bowler_onstrike.runs += batterScore;
+                    bowler_onstrike.setRuns(bowler_onstrike.getRuns()+batterScore);
 
                     /** swapping onstrike batsman when strike rotates **/
                     if (batterScore == 1 || batterScore == 3) {
@@ -208,7 +208,7 @@ public class First_Innings {
             }
 
             /** adding first_ing_balls to bowler **/
-            bowler_onstrike.balls ++;
+            bowler_onstrike.setBalls(bowler_onstrike.getBalls()+1);
 
             /** adding first_ing_balls to first_ing ball count **/
             first_ing_balls ++;
@@ -220,12 +220,12 @@ public class First_Innings {
         /** add on and off strike batsmen to batsman_list **/
         if (first_ing_wickets != TOTAL_WICKETS) {
             if (!batsmanList.contains(batsman_onstrike)){
-                batsman_onstrike.methodOfDissmal = "* NOT OUT";
+                batsman_onstrike.setMethodOfDissmal("* NOT OUT");
                 batsmanList.add(batsman_onstrike);
             }
         }
 
-        batsman_offstrike.methodOfDissmal = "NOT OUT";
+        batsman_offstrike.setMethodOfDissmal("NOT OUT");
         batsmanList.add(batsman_offstrike);
 
         /** add each batsman in yet_to_bat to batsman_list array for displaying purposes **/

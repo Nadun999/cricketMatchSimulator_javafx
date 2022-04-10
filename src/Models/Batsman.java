@@ -2,42 +2,23 @@ package Models;
 
 public class Batsman extends Player {
 
-//    public String name;
-//    public int runs;
-    public int balls;
-    public String methodOfDissmal;
-    public String bowlerName;
-    public Integer battingOrder;
+    protected int balls;
+    protected String methodOfDissmal;
+    protected String bowlerName;
+    protected Integer battingOrder;
 
 
     public Batsman(){
         super();
-//        this.runs = 0;
         this.balls = 0;
         this.methodOfDissmal = "";
         this.bowlerName = "";
     }
 
-//    public String getName() {
-//        return name;
-//    }
-//
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-//
-//    public int getRuns() {
-//        return runs;
-//    }
-
     public Integer getIntegerRuns() {
         return (Integer) runs;
     }
 
-//    public void setRuns(int runs) {
-//        this.runs = runs;
-//    }
-//
     public int getBalls() {
         return balls;
     }
@@ -69,5 +50,4 @@ public class Batsman extends Player {
     public void setBattingOrder(int battingOrder) {
         this.battingOrder = battingOrder;
     }
-
 }

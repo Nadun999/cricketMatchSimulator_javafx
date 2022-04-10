@@ -2,38 +2,24 @@ package Models;
 
 public class Bowler extends Player {
 
-//    public String name;
-    public double balls;
-//    public int runs;
-    public int wickets;
+
+    protected double balls;
+    protected int wickets;
 
 
     public Bowler(){
         super();
         this.balls = 0;
-        this.runs = 0;
         this.wickets = 0;
     }
-
-//    public String getName() {
-//        return name;
-//    }
-
-//    public void setName(String name) {
-//        this.name = name;
-//    }
 
     public double getBalls() {
         return balls;
     }
 
-//    public int getRuns() {
-//        return runs;
-//    }
-
-//    public void setRuns(int runs) {
-//        this.runs = runs;
-//    }
+    public void setBalls(double balls) {
+        this.balls = balls;
+    }
 
     public int getWickets() {
         return wickets;

@@ -1,11 +1,11 @@
-David Warner      55  23  LBW    Dushmantha Chameera
-Aaron Finch(C)      30  12  LBW    Chamika Karunarathne
-Mitchell Marsh      7  4  LBW    Wanindu Hasaranga
-Steve Smith      18  9  Caught    Wanindu Hasaranga
-Glenn Maxwell      14  9  LBW    MADAM GOTA
-Matthew Wade      36  9  * NOT OUT    
-Marcus Stionis      8  5  Caught    Maheesh Theekshana
-Pat Cummins      3  1  NOT OUT    
-Mitchell Starc      0  0      
-Adam Zampa      0  0      
-Josh Hazlewood      0  0      
+Mohammad Rizwan      17  10  Caught    Adam Zampa
+Babar Azam(C)      20  7  LBW    Pat Cummins
+Fakhar Zaman      32  10  LBW    Marcus Stionis
+Mohammad Hafeez      3  3  LBW    Josh Hazlewood
+Shoaib Malik      40  11  Caught    Josh Hazlewood
+Asif Ali      14  7  LBW    Mitchell Starc
+Shadab Khan      23  9  LBW    Marcus Stionis
+Imad Wasim      6  2  Caught    Marcus Stionis
+Hasan Ali      0  1  Caught    Marcus Stionis
+Shaheen Afridi      5  2  Bowled    Marcus Stionis
+Haris Rauf      3  1  NOT OUT    

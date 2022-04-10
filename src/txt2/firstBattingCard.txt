@@ -1,11 +1,11 @@
-Dinesh Chandimal      10  3  LBW    Josh Hazlewood
-Pathum Nissanka      18  7  Caught    Mitchell Starc
-Charith Asalanka      27  17  LBW    Mitchell Starc
-Dhananjaya de Silva      21  10  Bowled    Josh Hazlewood
-Bhanuka Rajapakse      5  3  Bowled    Adam Zampa
-Dasun Shanka(C)      55  19  Caught    Mitchell Starc
-Wanindu Hasaranga      3  4  Caught    Pat Cummins
-Chamika Karunarathne      8  4  Bowled    Josh Hazlewood
-Dushmantha Chameera      11  4  Caught    Josh Hazlewood
-Maheesh Theekshana      9  5  Caught    Adam Zampa
-MADAM GOTA      1  1  NOT OUT    
+David Warner      5  2  Bowled    Haris Rauf
+Aaron Finch(C)      9  4  LBW    Shaheen Afridi
+Mitchell Marsh      2  2  Caught    Haris Rauf
+Steve Smith      18  6  Bowled    Hasan Ali
+Glenn Maxwell      70  24  LBW    Hasan Ali
+Matthew Wade      1  2  Bowled    Imad Wasim
+Marcus Stionis      3  3  Bowled    Shadab Khan
+Pat Cummins      15  6  LBW    Imad Wasim
+Mitchell Starc      13  5  NOT OUT    
+Adam Zampa      14  5  LBW    Shadab Khan
+Josh Hazlewood      38  11  Caught    Shaheen Afridi
