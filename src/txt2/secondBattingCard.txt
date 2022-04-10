@@ -1,11 +1,11 @@
-Jason Roy      11  4  Caught    MADAM GOTA
-Jos Buttler      3  2  Bowled    Maheesh Theekshana
-Dawid Malan      23  12  LBW    Dushmantha Chameera
-Jonny Bairstow      43  17  Caught    MADAM GOTA
-Eoin Morgan(C)      0  1  Caught    MADAM GOTA
-Moeen Ali      0  2  LBW    MADAM GOTA
-Liam Livingstone      0  1  LBW    MADAM GOTA
-Chris Woakes      12  8  LBW    Chamika Karunarathne
-Chris Jordan      0  1  Bowled    Dushmantha Chameera
-Adil Rashid      9  6  Bowled    Wanindu Hasaranga
-Mark Wood      1  1  NOT OUT    
+Mohammad Rizwan      23  8  Bowled    Chris Jordan
+Babar Azam(C)      9  6  LBW    Chris Woakes
+Fakhar Zaman      5  3  LBW    Chris Jordan
+Mohammad Hafeez      39  12  LBW    Mark Wood
+Shoaib Malik      0  2  Bowled    Chris Woakes
+Asif Ali      24  9  Caught    Chris Jordan
+Shadab Khan      13  4  LBW    Adil Rashid
+Imad Wasim      0  3  Bowled    Adil Rashid
+Hasan Ali      3  3  LBW    Chris Woakes
+Shaheen Afridi      14  6  NOT OUT    
+Haris Rauf      3  3  Caught    Liam Livingstone

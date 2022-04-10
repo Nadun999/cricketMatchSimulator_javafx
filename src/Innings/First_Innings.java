@@ -10,20 +10,10 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import java.io.*;
 import java.util.*;
 
-public class First_Innings {
+public class First_Innings extends Innings {
 
-    Helper cricketHelper = new Helper();
-    Team_Array battingInfo = new Team_Array();
-    Team_Array bowlingInfo = new Team_Array();
-    ArrayList<Batsman> battingTeam = new ArrayList<>();
-    ArrayList<Bowler> bowlingTeam = new ArrayList<>();
-    Excel_Utility eu = new Excel_Utility();
-    ArrayList<Batsman> batsmanList = new ArrayList();
-    ArrayList<Bowler> bowlerList = new ArrayList();
 
-    public int Total1;
-    protected int TOTAL_BALLS = 120;
-    protected int TOTAL_WICKETS = 10;
+    private int Total1;
     private int first_ing_total = 0;
     private int first_ing_balls = 1;
     private int first_ing_wickets = 0;
@@ -34,44 +24,8 @@ public class First_Innings {
         bowlingInfo = toss_outcome.get(1);
     }
 
-    public ArrayList<Batsman> getBatsmanList() {
-        return batsmanList;
-    }
-
-    public ArrayList<Bowler> getBowlerList() {
-        return bowlerList;
-    }
-
-    public Team_Array getBattingInfo() {
-        return battingInfo;
-    }
-
-    public void setBattingInfo(Team_Array battingInfo) {
-        this.battingInfo = battingInfo;
-    }
-
-    public Team_Array getBowlingInfo() {
-        return bowlingInfo;
-    }
-
-    public void setBowlingInfo(Team_Array bowlingInfo) {
-        this.bowlingInfo = bowlingInfo;
-    }
-
-    public ArrayList<Batsman> getBattingTeam() {
-        return battingTeam;
-    }
-
-    public void setBattingTeam(ArrayList<Batsman> battingTeam) {
-        this.battingTeam = battingTeam;
-    }
-
-    public ArrayList<Bowler> getBowlingTeam() {
-        return bowlingTeam;
-    }
-
-    public void setBowlingTeam(ArrayList<Bowler> bowlingTeam) {
-        this.bowlingTeam = bowlingTeam;
+    public int getTotal1() {
+        return Total1;
     }
 
     public void setFirst_ing_total(int first_ing_total) {

@@ -16,20 +16,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-public class Second_Innings {
+public class Second_Innings extends Innings {
 
-    Helper cricketHelper = new Helper();
-    Team_Array battingInfo = new Team_Array();
-    Team_Array bowlingInfo = new Team_Array();
-    ArrayList<Batsman> battingTeam = new ArrayList<>();
-    ArrayList<Bowler> bowlingTeam = new ArrayList<>();
-    Excel_Utility eu = new Excel_Utility();
-    ArrayList<Batsman> batsmanList = new ArrayList();
-    ArrayList<Bowler> bowlerList = new ArrayList();
-
-    public int Total2;
-    protected int TOTAL_BALLS = 120;
-    protected int TOTAL_WICKETS = 10;
     private int second_ing_total = 0;
     private int second_ing_balls = 1;
     private int second_ing_wickets = 0;
@@ -37,54 +25,6 @@ public class Second_Innings {
     public Second_Innings(List<Team_Array> toss_outcome) throws IOException {
         battingInfo = toss_outcome.get(1);
         bowlingInfo = toss_outcome.get(0);
-    }
-
-    public Team_Array getBattingInfo() {
-        return battingInfo;
-    }
-
-    public void setBattingInfo(Team_Array battingInfo) {
-        this.battingInfo = battingInfo;
-    }
-
-    public Team_Array getBowlingInfo() {
-        return bowlingInfo;
-    }
-
-    public void setBowlingInfo(Team_Array bowlingInfo) {
-        this.bowlingInfo = bowlingInfo;
-    }
-
-    public ArrayList<Batsman> getBattingTeam() {
-        return battingTeam;
-    }
-
-    public void setBattingTeam(ArrayList<Batsman> battingTeam) {
-        this.battingTeam = battingTeam;
-    }
-
-    public ArrayList<Bowler> getBowlingTeam() {
-        return bowlingTeam;
-    }
-
-    public void setBowlingTeam(ArrayList<Bowler> bowlingTeam) {
-        this.bowlingTeam = bowlingTeam;
-    }
-
-    public void setSecond_ing_total(int second_ing_total) {
-        this.second_ing_total = second_ing_total;
-    }
-
-    public void setSecond_ing_wickets(int second_ing_wickets) {
-        this.second_ing_wickets = second_ing_wickets;
-    }
-
-    public ArrayList<Batsman> getBatsmanList() {
-        return batsmanList;
-    }
-
-    public ArrayList<Bowler> getBowlerList() {
-        return bowlerList;
     }
 
     public int getSecond_ing_total() {
@@ -279,8 +219,6 @@ public class Second_Innings {
         /** calling playerstanding to write the excel file **/
         eu.playerStandingWriteExcel(batsmanList,bowlerList,true);
         eu.playerStandingWriteExcel(batsmanList,bowlerList,false);
-
-        Total2 = second_ing_total;
     }
 }
 

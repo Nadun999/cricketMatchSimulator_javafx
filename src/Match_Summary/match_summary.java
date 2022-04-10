@@ -8,8 +8,8 @@ import java.io.IOException;
 
 public class match_summary {
 
-    String winning_team;
-    String losing_team;
+    private String winning_team;
+    private String losing_team;
 
     public void matchSummary(InningsSummary firstInningsSummary, InningsSummary secondInningsSummary) throws IOException, InvalidFormatException {
 

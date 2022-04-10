@@ -2,8 +2,8 @@ package Models;
 
 public class Player {
 
-    protected String name;
-    protected int runs;
+    private String name;
+    private int runs;
 
 
     public String getName() {
@@ -21,6 +21,4 @@ public class Player {
     public void setRuns(int runs) {
         this.runs = runs;
     }
-
-
 }

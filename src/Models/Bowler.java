@@ -2,9 +2,8 @@ package Models;
 
 public class Bowler extends Player {
 
-
-    protected double balls;
-    protected int wickets;
+    private double balls;
+    private int wickets;
 
 
     public Bowler(){
@@ -31,10 +30,5 @@ public class Bowler extends Player {
 
     public void setWickets(int wickets) {
         this.wickets = wickets;
-    }
-
-    public String getOvers(){
-
-        return "";
     }
 }

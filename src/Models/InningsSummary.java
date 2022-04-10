@@ -44,5 +44,4 @@ public class InningsSummary {
     public void setWickets(int wickets) {
         this.wickets = wickets;
     }
-
 }

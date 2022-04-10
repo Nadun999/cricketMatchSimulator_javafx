@@ -1,5 +1,5 @@
-MADAM GOTA      20  2.0  5
-Maheesh Theekshana      21  2.0  1
-Dushmantha Chameera      19  2.0  2
-Chamika Karunarathne      28  2.0  1
-Wanindu Hasaranga      14  1.1  1
+Mark Wood      46  2.0  1
+Adil Rashid      12  2.0  2
+Chris Jordan      32  2.0  3
+Chris Woakes      19  2.0  3
+Liam Livingstone      24  1.5  1

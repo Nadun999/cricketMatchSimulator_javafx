@@ -342,7 +342,7 @@ public class Controller {
 
         /** start second innings **/
         Second_Innings secondInnings = new Second_Innings(tossOutcome);
-        secondInnings.playSecondInnings(firstInnings.Total1);
+        secondInnings.playSecondInnings(firstInnings.getTotal1());
         total2.setText(String.valueOf(secondInnings.getSecond_ing_total()));
         wickets2.setText(String.valueOf(secondInnings.getSecond_ing_wickets()));
         overs2.setText(String.valueOf((secondInnings.getSecond_ing_balls()-1)/6+"."+(secondInnings.getSecond_ing_balls()-1)%6));

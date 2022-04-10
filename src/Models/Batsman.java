@@ -2,10 +2,10 @@ package Models;
 
 public class Batsman extends Player {
 
-    protected int balls;
-    protected String methodOfDissmal;
-    protected String bowlerName;
-    protected Integer battingOrder;
+    private int balls;
+    private String methodOfDissmal;
+    private String bowlerName;
+    private Integer battingOrder;
 
 
     public Batsman(){
@@ -16,7 +16,7 @@ public class Batsman extends Player {
     }
 
     public Integer getIntegerRuns() {
-        return (Integer) runs;
+        return (Integer) getRuns();
     }
 
     public int getBalls() {

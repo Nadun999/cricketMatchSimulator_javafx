@@ -1,11 +1,11 @@
-Dinesh Chandimal      5  3  Caught    Mark Wood
-Pathum Nissanka      11  4  LBW    Adil Rashid
-Charith Asalanka      31  10  LBW    Chris Woakes
-Dhananjaya de Silva      33  15  Caught    Mark Wood
-Bhanuka Rajapakse      41  13  Bowled    Liam Livingstone
-Dasun Shanka(C)      16  5  Bowled    Adil Rashid
-Wanindu Hasaranga      22  7  Caught    Chris Woakes
-Chamika Karunarathne      31  9  NOT OUT    
-Dushmantha Chameera      24  12  LBW    Chris Jordan
-Maheesh Theekshana      15  6  Caught    Chris Woakes
-MADAM GOTA      11  7  Bowled    Mark Wood
+Jason Roy      18  6  LBW    Haris Rauf
+Jos Buttler      43  12  Caught    Haris Rauf
+Dawid Malan      26  11  LBW    Shadab Khan
+Jonny Bairstow      0  1  Bowled    Shadab Khan
+Eoin Morgan(C)      33  12  Bowled    Shaheen Afridi
+Moeen Ali      51  15  Bowled    Shadab Khan
+Liam Livingstone      95  34  Caught    Imad Wasim
+Chris Woakes      9  4  Caught    Hasan Ali
+Chris Jordan      20  9  Bowled    Shadab Khan
+Adil Rashid      6  2  LBW    Shadab Khan
+Mark Wood      12  4  NOT OUT    
