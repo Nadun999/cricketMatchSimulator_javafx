@@ -1,11 +1,11 @@
-Mohammad Rizwan      17  10  Caught    Adam Zampa
-Babar Azam(C)      20  7  LBW    Pat Cummins
-Fakhar Zaman      32  10  LBW    Marcus Stionis
-Mohammad Hafeez      3  3  LBW    Josh Hazlewood
-Shoaib Malik      40  11  Caught    Josh Hazlewood
-Asif Ali      14  7  LBW    Mitchell Starc
-Shadab Khan      23  9  LBW    Marcus Stionis
-Imad Wasim      6  2  Caught    Marcus Stionis
-Hasan Ali      0  1  Caught    Marcus Stionis
-Shaheen Afridi      5  2  Bowled    Marcus Stionis
-Haris Rauf      3  1  NOT OUT    
+Jason Roy      11  4  Caught    MADAM GOTA
+Jos Buttler      3  2  Bowled    Maheesh Theekshana
+Dawid Malan      23  12  LBW    Dushmantha Chameera
+Jonny Bairstow      43  17  Caught    MADAM GOTA
+Eoin Morgan(C)      0  1  Caught    MADAM GOTA
+Moeen Ali      0  2  LBW    MADAM GOTA
+Liam Livingstone      0  1  LBW    MADAM GOTA
+Chris Woakes      12  8  LBW    Chamika Karunarathne
+Chris Jordan      0  1  Bowled    Dushmantha Chameera
+Adil Rashid      9  6  Bowled    Wanindu Hasaranga
+Mark Wood      1  1  NOT OUT    

@@ -260,7 +260,9 @@ public class First_Innings {
             PrintStream writer = new PrintStream(myFile2);
 
             for(Bowler i: bowlerList) {
-                writer.print(i.getName()+"      "+i.getRuns()+"  "+i.getBalls()+"  "+i.getWickets()+ System.lineSeparator());
+                double overs =((int)i.getBalls())/6+(((i.getBalls())%6)/10.0);
+                writer.print(i.getName()+"      "+i.getRuns()+"  "+overs+"  "+i.getWickets()+ System.lineSeparator());
+
             }
             writer.close();
 

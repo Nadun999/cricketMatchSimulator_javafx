@@ -1,10 +1,10 @@
 Group A  Matches Won  Lost  Lost  Points
 Mumbai_India                                          1                 1                 0                 2
-Chennai_SouthAfrica                               0                 0                 0                 0
+Chennai_SouthAfrica                               1                 0                 1                 0
 Delhi_NewZealand                                   0                 0                 0                 0
-RoyalChallengers_Bangladesh                 1                 0                 1                 0
+RoyalChallengers_Bangladesh                 2                 1                 1                 2
 Group B  Matches Won  Lost  Lost  Points
-Rajastan_Australia                               3                 2                 1                 4
-Kolkata_England                                  0                 0                 0                 0
-Punjab_Pakistan                                  2                 1                 1                 2
-Sunrisers_SriLanka                               1                 0                 1                 0
+Rajastan_Australia                               4                 2                 2                 4
+Kolkata_England                                  2                 1                 1                 2
+Punjab_Pakistan                                  4                 2                 2                 4
+Sunrisers_SriLanka                               2                 1                 1                 2
