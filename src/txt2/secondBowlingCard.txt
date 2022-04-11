@@ -1,5 +1,5 @@
-Mark Wood      46  2.0  1
-Adil Rashid      12  2.0  2
-Chris Jordan      32  2.0  3
-Chris Woakes      19  2.0  3
-Liam Livingstone      24  1.5  1
+Hasan Ali      16  1.0  0
+Imad Wasim      17  1.0  0
+Shadab Khan      20  1.0  0
+Haris Rauf      3  2.0  5
+Shaheen Afridi      30  2.0  3

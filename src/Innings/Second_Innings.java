@@ -221,4 +221,3 @@ public class Second_Innings extends Innings {
         eu.playerStandingWriteExcel(batsmanList,bowlerList,false);
     }
 }
-

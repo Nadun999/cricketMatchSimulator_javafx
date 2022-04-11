@@ -231,4 +231,3 @@ public class First_Innings extends Innings {
         Total1 = first_ing_total;
     }
 }
-

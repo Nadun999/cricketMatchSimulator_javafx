@@ -1,5 +1,5 @@
-Shadab Khan      33  3.0  5
-Haris Rauf      63  4.0  2
-Shaheen Afridi      70  4.0  1
-Hasan Ali      80  4.0  1
-Imad Wasim      67  3.2  1
+Mitchell Starc      8  1.0  2
+Pat Cummins      11  1.0  1
+Marcus Stionis      11  1.0  2
+Josh Hazlewood      32  2.0  3
+Adam Zampa      23  1.5  2

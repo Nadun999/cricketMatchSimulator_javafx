@@ -1,11 +1,11 @@
-Mohammad Rizwan      23  8  Bowled    Chris Jordan
-Babar Azam(C)      9  6  LBW    Chris Woakes
-Fakhar Zaman      5  3  LBW    Chris Jordan
-Mohammad Hafeez      39  12  LBW    Mark Wood
-Shoaib Malik      0  2  Bowled    Chris Woakes
-Asif Ali      24  9  Caught    Chris Jordan
-Shadab Khan      13  4  LBW    Adil Rashid
-Imad Wasim      0  3  Bowled    Adil Rashid
-Hasan Ali      3  3  LBW    Chris Woakes
-Shaheen Afridi      14  6  NOT OUT    
-Haris Rauf      3  3  Caught    Liam Livingstone
+David Warner      0  1  Caught    Haris Rauf
+Aaron Finch(C)      0  3  Bowled    Shaheen Afridi
+Mitchell Marsh      0  1  LBW    Haris Rauf
+Steve Smith      0  1  Bowled    Haris Rauf
+Glenn Maxwell      36  14  Caught    Haris Rauf
+Matthew Wade      40  13  NOT OUT    
+Marcus Stionis      0  2  Bowled    Haris Rauf
+Pat Cummins      0  2  Caught    Shaheen Afridi
+Mitchell Starc      5  4  LBW    Shaheen Afridi
+Adam Zampa      5  1  * NOT OUT    
+Josh Hazlewood      0  0      

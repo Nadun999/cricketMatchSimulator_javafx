@@ -1,11 +1,11 @@
-Jason Roy      18  6  LBW    Haris Rauf
-Jos Buttler      43  12  Caught    Haris Rauf
-Dawid Malan      26  11  LBW    Shadab Khan
-Jonny Bairstow      0  1  Bowled    Shadab Khan
-Eoin Morgan(C)      33  12  Bowled    Shaheen Afridi
-Moeen Ali      51  15  Bowled    Shadab Khan
-Liam Livingstone      95  34  Caught    Imad Wasim
-Chris Woakes      9  4  Caught    Hasan Ali
-Chris Jordan      20  9  Bowled    Shadab Khan
-Adil Rashid      6  2  LBW    Shadab Khan
-Mark Wood      12  4  NOT OUT    
+Mohammad Rizwan      6  3  LBW    Josh Hazlewood
+Babar Azam(C)      10  6  Caught    Marcus Stionis
+Fakhar Zaman      24  8  LBW    Mitchell Starc
+Mohammad Hafeez      5  2  Caught    Mitchell Starc
+Shoaib Malik      2  2  LBW    Pat Cummins
+Asif Ali      8  5  LBW    Adam Zampa
+Shadab Khan      7  4  Caught    Marcus Stionis
+Imad Wasim      4  2  Caught    Josh Hazlewood
+Hasan Ali      12  5  Caught    Josh Hazlewood
+Shaheen Afridi      0  1  Bowled    Adam Zampa
+Haris Rauf      7  3  NOT OUT    
